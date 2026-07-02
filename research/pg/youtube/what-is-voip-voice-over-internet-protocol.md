@@ -2,7 +2,7 @@
 
 Source: `pgProfiling/youtube/what-is-voip-voice-over-internet-protocol.json` (auto-generated Hindi-script captions of Hinglish speech, 339 fragments, ~744 seconds / ~12.4 min video)
 
-Note on source format: captions are rendered in Devanagari script but are almost entirely transliterated English/Hinglish speech (e.g. "वीओआईपी" = VoIP, "बेसिकली" = basically, "राइट?" = right?). Quotes below are given in Romanized Hinglish/English for readability, with offsets (in milliseconds, per the JSON) noted.
+Note on source format: captions are rendered in Devanagari script but are almost entirely transliterated English/Hinglish speech (e.g. "VoIP" = VoIP, "basically" = basically, "right?" = right?). Quotes below are given in Romanized Hinglish/English for readability, with offsets (in milliseconds, per the JSON) noted.
 
 ## Language Mix Pattern
 
@@ -10,8 +10,8 @@ The speech is fluid, intra-sentential Hinglish code-switching — not block-swit
 
 - Hindi/English ratio is roughly balanced-to-English-leaning: casual asides, transitions, and jokes are in Hindi; formal definitions and reading of the reference article are in English.
 - Classic pattern: pose a question in Hindi, answer it in English. E.g. (offset 28880) *"VoIP hota kya hai? Dekho jab bhi aap kisi ko phone call karte ho you use your SIM right?"*
-- Recurring Hindi connective/filler words: **"तो" (to/so)**, **"देखो" (dekho — "look")**, **"ठीक है?" (theek hai — "okay?")**, **"अब" (ab — "now")**, **"मतलब" (matlab — "meaning" / "i.e.")**, **"राइट?" (right?)** used as a Hindi-English hybrid tag question.
-- English words are borrowed wholesale even inside Hindi clauses: "बेसिकली" (basically), "एक्चुअली" (actually), "ऑब्वियसली" (obviously) appear constantly as sentence connectors rather than "actual Hindi" equivalents.
+- Recurring Hindi connective/filler words: **"to" (to/so)**, **"dekho" (dekho — "look")**, **"theek hai?" (theek hai — "okay?")**, **"ab" (ab — "now")**, **"matlab" (matlab — "meaning" / "i.e.")**, **"right?" (right?)** used as a Hindi-English hybrid tag question.
+- English words are borrowed wholesale even inside Hindi clauses: "basically" (basically), "actually" (actually), "obviously" (obviously) appear constantly as sentence connectors rather than "actual Hindi" equivalents.
 - He reads directly from an on-screen blog/article (CloudFlare page, then a Columbia University paper) in English, then re-explains/paraphrases the same idea in Hindi immediately after — a "read then translate-explain" rhythm repeated throughout.
 
 ## Tone and Energy
@@ -27,7 +27,7 @@ The speech is fluid, intra-sentential Hinglish code-switching — not block-swit
 
 - **"So, hey everyone, welcome back. Welcome back to another exciting video..."** — stock opening (offset 80).
 - **"Theek hai?"** ("okay?") — used relentlessly as a rhetorical check-in after nearly every explanatory beat (e.g. offsets 133840, 296080, 384639, 419280...).
-- **"Basically"** / **"बेसिकली"** — used as a default connector to restate/simplify a point, e.g. (offset 40639) *"woh basically jo yeh aapke network hote hain..."*, (offset 646160) *"SIP basically handles a session initialization."*
+- **"Basically"** / **"basically"** — used as a default connector to restate/simplify a point, e.g. (offset 40639) *"woh basically jo yeh aapke network hote hain..."*, (offset 646160) *"SIP basically handles a session initialization."*
 - **"So with that, let's start..."** — transition phrase used to move from setup to content (offset 20960, 93280).
 - **"Right?"** — tag question sprinkled throughout for audience engagement, often stacked with "theek hai?" in the same breath.
 - **"That's it."** / **"That's the whole thing."** — closing punctuation on a point (offset 102320, 240159).
@@ -36,7 +36,7 @@ The speech is fluid, intra-sentential Hinglish code-switching — not block-swit
 
 ## Sentence Structure and Pacing
 
-- Mixes short punchy Hindi clauses ("दैट्स इट।" / "बहुत जरूरी है भाई।") with longer, more technical English sentences lifted near-verbatim from the reference article, then re-broken into shorter Hindi paraphrase.
+- Mixes short punchy Hindi clauses ("That's it." / "bahut zaroori hai bhai.") with longer, more technical English sentences lifted near-verbatim from the reference article, then re-broken into shorter Hindi paraphrase.
 - Pacing device: reads an English sentence from the article, then immediately restates/simplifies it in Hindi for the audience — e.g. reads *"the internet was not designed to carry audio signals in real time between two connected persons"* (offset 106799) then immediately explains in Hindi: *"Dekho, jab hum landline ki baat karte hain, to yaad hai wahan ek port hota tha, ethernet jaisa ek chota port hota tha jisko hum telephone port kehte the..."* (offset 111840).
 - Topic introduction pattern: states the agenda upfront ("we'll understand a high-level design and system design... what VoIP is, how it works, what protocols are included" — offset 9840), then works through it roughly in that order, protocol by protocol (SIP → RTP/SRTP → MGCP).
 - Each sub-topic (SIP, RTP, MGCP) is closed with a mini-recap sentence before moving on — e.g. after SIP: *"SIP aapko samajh aa gaya hai. Sets up, sets up and end the call."* (offset 484560) before pivoting to RTP.
