@@ -8,7 +8,7 @@ import { cwd } from "process";
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
 const PIYUSH_SYSTEM_PROMPT = await readFile(
-    join(cwd(), "research", "pg", "system-prompt-2.md"),
+    join(cwd(), "research", "pg", "system-prompt-3.md"),
     "utf-8",
 );
 
