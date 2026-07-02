@@ -24,12 +24,12 @@ Video length: ~8:15. Transcript is Hindi-script (Devanagari) but almost entirely
 
 ## Recurring Verbal Tics, Catchphrases, Filler Words
 
-- **"so" (so)** — his single most frequent tic, opening a huge fraction of new thoughts/sentences. Appears dozens of times, e.g. `[00:00]`, `[00:19]`, `[01:34]`, `[04:04]`, `[05:33]`.
-- **"okay?" (okay?)** — constant check-in with the viewer, dropped after almost every instruction or observation. E.g. `[00:44]`, `[01:26]`, `[01:59]`, `[04:02]`, `[06:14]`.
-- **"you can see" (you can see)** — used repeatedly to direct viewer attention to the screen. E.g. `[01:00]` "You can see that maine yahan par kar liya hai sign in", `[03:29]` "And here we go. So you can see that now everything is in 3D", `[06:23]` "And you can see the quality is very high actually."
-- **"basically" (basically)** — recurs as an explanatory hedge/summarizer, e.g. `[04:47]` "It reasons it imagines it basically understands what you want to say.", `[07:07]` "Jo basically educational videos ke andar as a B roll... kaam kar sakti hain."
-- **"let's see" / "let's say" (let's see / let's say)** — used to transition into a new demo or hypothetical: `[01:55]` "Let's say I want to show you that how a reverse proxy works", `[04:00]` "And let's see how well this particular thing generates."
-- **"particular" (particular)** — overused qualifier attached to almost every noun ("this particular video", "this particular model", "this particular thing", "this particular prompt") — appears well over a dozen times across the video.
+- **"so"** — his single most frequent tic, opening a huge fraction of new thoughts/sentences. Appears dozens of times, e.g. `[00:00]`, `[00:19]`, `[01:34]`, `[04:04]`, `[05:33]`.
+- **"okay?"** — constant check-in with the viewer, dropped after almost every instruction or observation. E.g. `[00:44]`, `[01:26]`, `[01:59]`, `[04:02]`, `[06:14]`.
+- **"you can see"** — used repeatedly to direct viewer attention to the screen. E.g. `[01:00]` "You can see that maine yahan par kar liya hai sign in", `[03:29]` "And here we go. So you can see that now everything is in 3D", `[06:23]` "And you can see the quality is very high actually."
+- **"basically"** — recurs as an explanatory hedge/summarizer, e.g. `[04:47]` "It reasons it imagines it basically understands what you want to say.", `[07:07]` "Jo basically educational videos ke andar as a B roll... kaam kar sakti hain."
+- **"let's see" / "let's say"** — used to transition into a new demo or hypothetical: `[01:55]` "Let's say I want to show you that how a reverse proxy works", `[04:00]` "And let's see how well this particular thing generates."
+- **"particular"** — overused qualifier attached to almost every noun ("this particular video", "this particular model", "this particular thing", "this particular prompt") — appears well over a dozen times across the video.
 - **"that's it" / "that's the main thing"** — closing/wrap-up micro-phrase after finishing a point: `[03:08]` "That's it. Enter kiya.", `[04:53]` "Toh, that's the main thing."
 - **"toh" (so/then)** — Hindi-native equivalent to "so", used as often as so, especially to restart a sentence after a pause: `[02:19]` "Toh jaise hi hum isko create karenge...", `[05:02]` "Toh, yeh kya karega?"
 - **"crazy stuff right?"** `[07:11]` — a stand-alone reaction/catchphrase moment.

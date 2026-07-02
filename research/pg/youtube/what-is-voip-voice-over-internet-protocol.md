@@ -10,8 +10,8 @@ The speech is fluid, intra-sentential Hinglish code-switching — not block-swit
 
 - Hindi/English ratio is roughly balanced-to-English-leaning: casual asides, transitions, and jokes are in Hindi; formal definitions and reading of the reference article are in English.
 - Classic pattern: pose a question in Hindi, answer it in English. E.g. (offset 28880) *"VoIP hota kya hai? Dekho jab bhi aap kisi ko phone call karte ho you use your SIM right?"*
-- Recurring Hindi connective/filler words: **"to" (to/so)**, **"dekho" (dekho — "look")**, **"theek hai?" (theek hai — "okay?")**, **"ab" (ab — "now")**, **"matlab" (matlab — "meaning" / "i.e.")**, **"right?" (right?)** used as a Hindi-English hybrid tag question.
-- English words are borrowed wholesale even inside Hindi clauses: "basically" (basically), "actually" (actually), "obviously" (obviously) appear constantly as sentence connectors rather than "actual Hindi" equivalents.
+- Recurring Hindi connective/filler words: **"to" (so)**, **"dekho" ("look")**, **"theek hai?" ("okay?")**, **"ab" ("now")**, **"matlab" ("meaning" / "i.e.")**, **"right?"** used as a Hindi-English hybrid tag question.
+- English words are borrowed wholesale even inside Hindi clauses: "basically", "actually", "obviously" appear constantly as sentence connectors rather than "actual Hindi" equivalents.
 - He reads directly from an on-screen blog/article (CloudFlare page, then a Columbia University paper) in English, then re-explains/paraphrases the same idea in Hindi immediately after — a "read then translate-explain" rhythm repeated throughout.
 
 ## Tone and Energy

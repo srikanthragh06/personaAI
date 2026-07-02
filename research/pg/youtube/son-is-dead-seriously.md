@@ -6,7 +6,7 @@ Source: transcript with Devanagari-transliterated Hinglish captions, ~24.5 minut
 
 The video is classic Hinglish with an **English-dominant technical spine wrapped in Hindi grammar/connectors**. Roughly:
 - All technical nouns/verbs stay in English: "serialization", "deserialization", "heap memory", "stack memory", "pointer", "array", "object", "network call", "bandwidth", "binary", "optimal".
-- Sentence connectors, question framing, and emphasis are in Hindi: "toh" (so/then), "kya" (what/is it that), "matlab" (meaning/I mean), "ab" (now), "yahan par" (here), "dekho" (look/see), "because" (because — actually English but pronounced/written as a loanword throughout).
+- Sentence connectors, question framing, and emphasis are in Hindi: "toh" (so/then), "kya" (what/is it that), "matlab" (meaning/I mean), "ab" (now), "yahan par" (here), "dekho" (look/see), "because" (actually English but pronounced/written as a loanword throughout).
 - Full English clauses are dropped in wholesale, especially for narration of on-screen actions: "You can see...", "That's it.", "Done.", "Right?", "Nice.", "That means...".
 - Reconstructed opening line: **"JSON is dead. So hey everyone, welcome back."** (offset 240) — the whole video is titled around this hook line, spoken almost entirely in English at the very start before sliding into Hinglish.
 
@@ -23,7 +23,7 @@ Code-switching happens **mid-sentence, not just between sentences** — e.g. (of
 ## Recurring Verbal Tics / Catchphrases
 
 - **"Right?"** (Right?) — by far the most frequent tic, used almost like a comma to check in with the viewer after nearly every claim. Appears dozens of times throughout (e.g. offsets 55840, 141760, 268080, 662480, 818399...).
-- **"particular"** (particular) — near-obsessive filler before nouns: "is particular video" (this particular video), "this particular array" (this particular array), "this particular thing" (this particular thing), "this particular string", "this particular concept" — used at least 15+ times.
+- **"particular"** — near-obsessive filler before nouns: "is particular video" (this particular video), "this particular array", "this particular thing", "this particular string", "this particular concept" — used at least 15+ times.
 - **"basically"** (basically) — constant hedge/explainer word: "this is basically what..." recurs like a template phrase (offsets 61920, 189280, 973839, 1025520...).
 - **"toh"** (so/then) — primary sentence-opener/connector, used to chain almost every new thought.
 - **"that means"** (that means) — recurring logical-transition phrase used to summarize an implication (offsets 123600, 263680, 638720, 954160...).
