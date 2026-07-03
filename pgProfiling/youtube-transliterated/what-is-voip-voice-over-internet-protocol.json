@@ -1,0 +1,2036 @@
+[
+    {
+        "text": "Alright. So, hey everyone, welcome back. Welcome",
+        "duration": 4160,
+        "offset": 80,
+        "lang": "hi"
+    },
+    {
+        "text": "back to another exciting video and in this",
+        "duration": 5120,
+        "offset": 2080,
+        "lang": "hi"
+    },
+    {
+        "text": "video, hum baat karenge about VoIP that",
+        "duration": 5600,
+        "offset": 4240,
+        "lang": "hi"
+    },
+    {
+        "text": "stands for Voice over Internet Protocol.",
+        "duration": 4640,
+        "offset": 7200,
+        "lang": "hi"
+    },
+    {
+        "text": "So, is video ke andar ek high level design",
+        "duration": 4000,
+        "offset": 9840,
+        "lang": "hi"
+    },
+    {
+        "text": "aur ek system design ko samjhenge that ek",
+        "duration": 4400,
+        "offset": 11840,
+        "lang": "hi"
+    },
+    {
+        "text": "Voice over Internet Protocol kya hota hai?",
+        "duration": 4480,
+        "offset": 13840,
+        "lang": "hi"
+    },
+    {
+        "text": "and how does this work and iske andar",
+        "duration": 4720,
+        "offset": 16240,
+        "lang": "hi"
+    },
+    {
+        "text": "kaun-kaun se aur protocols are included.",
+        "duration": 4320,
+        "offset": 18320,
+        "lang": "hi"
+    },
+    {
+        "text": "So, with that, let's start with the video.",
+        "duration": 3680,
+        "offset": 20960,
+        "lang": "hi"
+    },
+    {
+        "text": "So, yeh ek blog page hai from the Cloud",
+        "duration": 4240,
+        "offset": 22640,
+        "lang": "hi"
+    },
+    {
+        "text": "Flare. And VoIP ki pehle baat karte",
+        "duration": 4240,
+        "offset": 24640,
+        "lang": "hi"
+    },
+    {
+        "text": "hain. That ek VoIP Voice over Internet",
+        "duration": 3840,
+        "offset": 26880,
+        "lang": "hi"
+    },
+    {
+        "text": "Protocol hota kya hai? Dekho jab bhi aap",
+        "duration": 4160,
+        "offset": 28880,
+        "lang": "hi"
+    },
+    {
+        "text": "kisi ko phone call karte ho you use your SIM",
+        "duration": 4080,
+        "offset": 30720,
+        "lang": "hi"
+    },
+    {
+        "text": "right? Aapke paas ek network provider hota",
+        "duration": 3679,
+        "offset": 33040,
+        "lang": "hi"
+    },
+    {
+        "text": "hai like Airtel ho sakta hai, Jio ho sakta",
+        "duration": 4480,
+        "offset": 34800,
+        "lang": "hi"
+    },
+    {
+        "text": "hai. And aap jo baat karte ho woh cellular",
+        "duration": 4481,
+        "offset": 36719,
+        "lang": "hi"
+    },
+    {
+        "text": "network ke upar karte ho. Basically jo yeh",
+        "duration": 4320,
+        "offset": 39280,
+        "lang": "hi"
+    },
+    {
+        "text": "aapke networks hote hain aap inke cellular",
+        "duration": 5199,
+        "offset": 41200,
+        "lang": "hi"
+    },
+    {
+        "text": "ko use karte ho to transform your voice",
+        "duration": 5439,
+        "offset": 43600,
+        "lang": "hi"
+    },
+    {
+        "text": "into an analog thing and then transfer it",
+        "duration": 5041,
+        "offset": 46399,
+        "lang": "hi"
+    },
+    {
+        "text": "on the wire and send it to the other user. But",
+        "duration": 4401,
+        "offset": 49039,
+        "lang": "hi"
+    },
+    {
+        "text": "Voice over Internet Protocol ke andar aap yeh",
+        "duration": 4000,
+        "offset": 51440,
+        "lang": "hi"
+    },
+    {
+        "text": "cellular networks ko use nahi karte ho.",
+        "duration": 4480,
+        "offset": 53440,
+        "lang": "hi"
+    },
+    {
+        "text": "You actually use your internet. Jis internet",
+        "duration": 4400,
+        "offset": 55440,
+        "lang": "hi"
+    },
+    {
+        "text": "pe abhi aap yeh video ko dekh rahe ho, jis",
+        "duration": 3760,
+        "offset": 57920,
+        "lang": "hi"
+    },
+    {
+        "text": "internet ke upar aap video calls karte ho,",
+        "duration": 3519,
+        "offset": 59840,
+        "lang": "hi"
+    },
+    {
+        "text": "usi internet ko hum use karte hain to",
+        "duration": 3839,
+        "offset": 61680,
+        "lang": "hi"
+    },
+    {
+        "text": "transfer the voice. Ab iska benefit kya",
+        "duration": 3921,
+        "offset": 63359,
+        "lang": "hi"
+    },
+    {
+        "text": "hai? Number one you are using the internet. Toh",
+        "duration": 3521,
+        "offset": 65519,
+        "lang": "hi"
+    },
+    {
+        "text": "aapke paas zyada capabilities hoti hai,",
+        "duration": 3680,
+        "offset": 67280,
+        "lang": "hi"
+    },
+    {
+        "text": "zyada smooth experience hota hai. And you",
+        "duration": 3759,
+        "offset": 69040,
+        "lang": "hi"
+    },
+    {
+        "text": "can even do like you know video callings",
+        "duration": 4080,
+        "offset": 70960,
+        "lang": "hi"
+    },
+    {
+        "text": "and all. Toh agar aapne kabhi notice kiya hoga",
+        "duration": 4881,
+        "offset": 72799,
+        "lang": "hi"
+    },
+    {
+        "text": "agar aap kisi ko WhatsApp call karte ho toh",
+        "duration": 4719,
+        "offset": 75040,
+        "lang": "hi"
+    },
+    {
+        "text": "the sound clarity is actually better right",
+        "duration": 4000,
+        "offset": 77680,
+        "lang": "hi"
+    },
+    {
+        "text": "rather than the cellular network toh yeh hota",
+        "duration": 3921,
+        "offset": 79759,
+        "lang": "hi"
+    },
+    {
+        "text": "hai aapka VoIP toh aapke Teams ki call",
+        "duration": 5920,
+        "offset": 81680,
+        "lang": "hi"
+    },
+    {
+        "text": "Slack call aapke andar aapke jo yeh WhatsApp",
+        "duration": 6320,
+        "offset": 83680,
+        "lang": "hi"
+    },
+    {
+        "text": "calls hoti hain they all use VIP but yeh",
+        "duration": 4080,
+        "offset": 87600,
+        "lang": "hi"
+    },
+    {
+        "text": "VIP kaam kaise karta hai? Kya-kya",
+        "duration": 3280,
+        "offset": 90000,
+        "lang": "hi"
+    },
+    {
+        "text": "protocols included hai? Toh woh hum baat",
+        "duration": 3600,
+        "offset": 91680,
+        "lang": "hi"
+    },
+    {
+        "text": "karte hain is video ke andar. So with that",
+        "duration": 4159,
+        "offset": 93280,
+        "lang": "hi"
+    },
+    {
+        "text": "let's start one. So VIP that is Voice",
+        "duration": 3839,
+        "offset": 95280,
+        "lang": "hi"
+    },
+    {
+        "text": "over Internet Protocol is a method for",
+        "duration": 4881,
+        "offset": 97439,
+        "lang": "hi"
+    },
+    {
+        "text": "making telephone calls over the internet.",
+        "duration": 5201,
+        "offset": 99119,
+        "lang": "hi"
+    },
+    {
+        "text": "That's the whole thing. So, unlike the old",
+        "duration": 4479,
+        "offset": 102320,
+        "lang": "hi"
+    },
+    {
+        "text": "landline telephone system, the internet was",
+        "duration": 5360,
+        "offset": 104320,
+        "lang": "hi"
+    },
+    {
+        "text": "not design to carry audio signals in",
+        "duration": 5041,
+        "offset": 106799,
+        "lang": "hi"
+    },
+    {
+        "text": "real time between two connected persons. So,",
+        "duration": 4640,
+        "offset": 109680,
+        "lang": "hi"
+    },
+    {
+        "text": "this is the main thing. Dekho, jab hum landline",
+        "duration": 3919,
+        "offset": 111840,
+        "lang": "hi"
+    },
+    {
+        "text": "ki baat karte hain, toh you remember wahan par",
+        "duration": 3280,
+        "offset": 114320,
+        "lang": "hi"
+    },
+    {
+        "text": "ek port hota tha, ethernet jaisa ek chota",
+        "duration": 3441,
+        "offset": 115759,
+        "lang": "hi"
+    },
+    {
+        "text": "port hota tha jisko hum telephone port",
+        "duration": 3839,
+        "offset": 117600,
+        "lang": "hi"
+    },
+    {
+        "text": "kehte the. Toh uske upar aapki poori voices jo",
+        "duration": 4239,
+        "offset": 119200,
+        "lang": "hi"
+    },
+    {
+        "text": "hoti thi woh transfer hoti thi. Because",
+        "duration": 4720,
+        "offset": 121439,
+        "lang": "hi"
+    },
+    {
+        "text": "internet jo tha jo specifically woh design nahi",
+        "duration": 4481,
+        "offset": 123439,
+        "lang": "hi"
+    },
+    {
+        "text": "tha ki main aapke audio signals ko",
+        "duration": 3841,
+        "offset": 126159,
+        "lang": "hi"
+    },
+    {
+        "text": "transfer kar sakoon. Utni speed nahi thi,",
+        "duration": 4240,
+        "offset": 127920,
+        "lang": "hi"
+    },
+    {
+        "text": "utni latency optimizations nahi thi.",
+        "duration": 4160,
+        "offset": 130000,
+        "lang": "hi"
+    },
+    {
+        "text": "Real timeness was missing. Specialized",
+        "duration": 4320,
+        "offset": 132160,
+        "lang": "hi"
+    },
+    {
+        "text": "technologies and protocols have to be",
+        "duration": 4960,
+        "offset": 134160,
+        "lang": "hi"
+    },
+    {
+        "text": "constructed to make it possible. Aur yeh jo",
+        "duration": 4160,
+        "offset": 136480,
+        "lang": "hi"
+    },
+    {
+        "text": "technologies and protocols ki hum baat kar",
+        "duration": 3839,
+        "offset": 139120,
+        "lang": "hi"
+    },
+    {
+        "text": "rahe hain that is basically what is VoIP. Toh",
+        "duration": 4640,
+        "offset": 140640,
+        "lang": "hi"
+    },
+    {
+        "text": "VoIP khud mein ek protocol nahi hai. VoIP",
+        "duration": 4081,
+        "offset": 142959,
+        "lang": "hi"
+    },
+    {
+        "text": "kya hai? Actually mein bahut saari aur",
+        "duration": 3920,
+        "offset": 145280,
+        "lang": "hi"
+    },
+    {
+        "text": "protocols ko milakar. Theek hai? Woh jo hum",
+        "duration": 4400,
+        "offset": 147040,
+        "lang": "hi"
+    },
+    {
+        "text": "neeche baat karenge isi video ke andar usko",
+        "duration": 4319,
+        "offset": 149200,
+        "lang": "hi"
+    },
+    {
+        "text": "inhone VoIP bola. That all comprises",
+        "duration": 5519,
+        "offset": 151440,
+        "lang": "hi"
+    },
+    {
+        "text": "VoIP. Today VoIP is a highly efficient. I",
+        "duration": 5440,
+        "offset": 153519,
+        "lang": "hi"
+    },
+    {
+        "text": "don't know isko VoIP kehna chahiye ya VIP",
+        "duration": 3920,
+        "offset": 156959,
+        "lang": "hi"
+    },
+    {
+        "text": "kehna chahiye. But it's one on the same thing VoIP",
+        "duration": 4000,
+        "offset": 158959,
+        "lang": "hi"
+    },
+    {
+        "text": "aur VIP. Actually main jis last company",
+        "duration": 3921,
+        "offset": 160879,
+        "lang": "hi"
+    },
+    {
+        "text": "mein kaam karta tha wahan par humne VIP ke",
+        "duration": 4161,
+        "offset": 162959,
+        "lang": "hi"
+    },
+    {
+        "text": "upar kaafi kaam kiya tha using Twilio as a",
+        "duration": 4240,
+        "offset": 164800,
+        "lang": "hi"
+    },
+    {
+        "text": "service. Toh wahan par har koi VoIP kehta tha",
+        "duration": 3280,
+        "offset": 167120,
+        "lang": "hi"
+    },
+    {
+        "text": "isko. Toh I think that's the reason I am",
+        "duration": 3279,
+        "offset": 169040,
+        "lang": "hi"
+    },
+    {
+        "text": "calling it as VoIP but I used to call it as",
+        "duration": 4400,
+        "offset": 170400,
+        "lang": "hi"
+    },
+    {
+        "text": "VIP. Is a highly efficient method for both",
+        "duration": 4721,
+        "offset": 172319,
+        "lang": "hi"
+    },
+    {
+        "text": "audio and video real time communications.",
+        "duration": 3680,
+        "offset": 174800,
+        "lang": "hi"
+    },
+    {
+        "text": "Theek hai? So this is basically what we are",
+        "duration": 3120,
+        "offset": 177040,
+        "lang": "hi"
+    },
+    {
+        "text": "going to see. Toh agar hum yahan pe thoda neeche",
+        "duration": 4960,
+        "offset": 178480,
+        "lang": "hi"
+    },
+    {
+        "text": "chalte hain toh yeh ek page hai. Iske andar ek",
+        "duration": 6400,
+        "offset": 180160,
+        "lang": "hi"
+    },
+    {
+        "text": "implementation hai like of this VoIP Voice over",
+        "duration": 5040,
+        "offset": 183440,
+        "lang": "hi"
+    },
+    {
+        "text": "Internet Protocol and yeh bahut accha",
+        "duration": 3920,
+        "offset": 186560,
+        "lang": "hi"
+    },
+    {
+        "text": "article hai. Agar aapko understand karna hai",
+        "duration": 4240,
+        "offset": 188480,
+        "lang": "hi"
+    },
+    {
+        "text": "ki sach mein ek Voice over Internet Protocol",
+        "duration": 3839,
+        "offset": 190480,
+        "lang": "hi"
+    },
+    {
+        "text": "kaam kaise karta hai? Theek hai? Toh thoda sa hum",
+        "duration": 4159,
+        "offset": 192720,
+        "lang": "hi"
+    },
+    {
+        "text": "yahan se padhte hain. Toh humein end goal kya",
+        "duration": 4401,
+        "offset": 194319,
+        "lang": "hi"
+    },
+    {
+        "text": "hai? Agar hum design ki baat karein toh humara",
+        "duration": 4321,
+        "offset": 196879,
+        "lang": "hi"
+    },
+    {
+        "text": "jo hai woh end goal kya hai? The end goal is",
+        "duration": 5599,
+        "offset": 198720,
+        "lang": "hi"
+    },
+    {
+        "text": "number one we need a way to pick up the phone. Agar",
+        "duration": 6080,
+        "offset": 201200,
+        "lang": "hi"
+    },
+    {
+        "text": "let's say mere is phone ne VoIP ke upar",
+        "duration": 5361,
+        "offset": 204319,
+        "lang": "hi"
+    },
+    {
+        "text": "kisi ko call kiya toh there should be a way ki",
+        "duration": 4400,
+        "offset": 207280,
+        "lang": "hi"
+    },
+    {
+        "text": "main is phone ko call pick kar paun. Matlab ki jo",
+        "duration": 4240,
+        "offset": 209680,
+        "lang": "hi"
+    },
+    {
+        "text": "call hai woh mujh tak aani chahiye. This is one",
+        "duration": 5119,
+        "offset": 211680,
+        "lang": "hi"
+    },
+    {
+        "text": "condition of the VIP. Right? A way to ring the",
+        "duration": 5360,
+        "offset": 213920,
+        "lang": "hi"
+    },
+    {
+        "text": "phone. Okay? A way to speak into the phone. Yeh",
+        "duration": 4961,
+        "offset": 216799,
+        "lang": "hi"
+    },
+    {
+        "text": "ek hardware cheez hai. A way to transmit",
+        "duration": 5360,
+        "offset": 219280,
+        "lang": "hi"
+    },
+    {
+        "text": "and receive the voice data, a way to hear the",
+        "duration": 4720,
+        "offset": 221760,
+        "lang": "hi"
+    },
+    {
+        "text": "person on the other hai and and a way to hang",
+        "duration": 4640,
+        "offset": 224640,
+        "lang": "hi"
+    },
+    {
+        "text": "up. Toh agar aap ek khud ka Voice over Internet",
+        "duration": 4800,
+        "offset": 226480,
+        "lang": "hi"
+    },
+    {
+        "text": "Protocol jaisa ek system bana rahe ho. Ek",
+        "duration": 4000,
+        "offset": 229280,
+        "lang": "hi"
+    },
+    {
+        "text": "internet ke upar aap voice ko transfer karna",
+        "duration": 4640,
+        "offset": 231280,
+        "lang": "hi"
+    },
+    {
+        "text": "chahte ho. These are all the things that you have",
+        "duration": 5200,
+        "offset": 233280,
+        "lang": "hi"
+    },
+    {
+        "text": "to implement. Call kar sakta hai, call receive",
+        "duration": 4239,
+        "offset": 235920,
+        "lang": "hi"
+    },
+    {
+        "text": "kar sakta hai. Hum usko utha sakte hain, hang",
+        "duration": 3200,
+        "offset": 238480,
+        "lang": "hi"
+    },
+    {
+        "text": "up kar sakte hain, baat kar sakte hain. That's",
+        "duration": 3121,
+        "offset": 240159,
+        "lang": "hi"
+    },
+    {
+        "text": "it. Iske alawa aur toh kya hi karoge?",
+        "duration": 3680,
+        "offset": 241680,
+        "lang": "hi"
+    },
+    {
+        "text": "Right? So in in our system the",
+        "duration": 3840,
+        "offset": 243280,
+        "lang": "hi"
+    },
+    {
+        "text": "requirements are very simple ki yaar pehli",
+        "duration": 4079,
+        "offset": 245360,
+        "lang": "hi"
+    },
+    {
+        "text": "baat humein ek mobile chahiye. Obviously bina",
+        "duration": 4880,
+        "offset": 247120,
+        "lang": "hi"
+    },
+    {
+        "text": "mobile ke kaise karoge? Right? And we need a",
+        "duration": 4321,
+        "offset": 249439,
+        "lang": "hi"
+    },
+    {
+        "text": "connection. Obviously we need a connection. We",
+        "duration": 4079,
+        "offset": 252000,
+        "lang": "hi"
+    },
+    {
+        "text": "need a speaker. Kisi se baat karne ke liye toh",
+        "duration": 4319,
+        "offset": 253760,
+        "lang": "hi"
+    },
+    {
+        "text": "chahiye na. Khud se thodi na baat karoge. Pagal",
+        "duration": 3601,
+        "offset": 256079,
+        "lang": "hi"
+    },
+    {
+        "text": "thodi na ho. Toh humein kya chahiye? Humein ek",
+        "duration": 3361,
+        "offset": 258079,
+        "lang": "hi"
+    },
+    {
+        "text": "person chahiye jisse hum baat kar sakein. Bahut",
+        "duration": 3840,
+        "offset": 259680,
+        "lang": "hi"
+    },
+    {
+        "text": "zaroori hai bhai dhoondh lo apne liye. So to",
+        "duration": 4160,
+        "offset": 261440,
+        "lang": "hi"
+    },
+    {
+        "text": "implement the system okay toh is cheez ko aap",
+        "duration": 3840,
+        "offset": 263520,
+        "lang": "hi"
+    },
+    {
+        "text": "skip kar sakte ho. So if you just go down",
+        "duration": 4080,
+        "offset": 265600,
+        "lang": "hi"
+    },
+    {
+        "text": "down down toh this is basically where it all",
+        "duration": 4399,
+        "offset": 267360,
+        "lang": "hi"
+    },
+    {
+        "text": "started. Toh agar hum VIP module ki",
+        "duration": 4160,
+        "offset": 269680,
+        "lang": "hi"
+    },
+    {
+        "text": "baat karte hain. The VIP module in the",
+        "duration": 4321,
+        "offset": 271759,
+        "lang": "hi"
+    },
+    {
+        "text": "project would be implemented using SIP",
+        "duration": 5280,
+        "offset": 273840,
+        "lang": "hi"
+    },
+    {
+        "text": "RTP based VIP soft phone. This is the",
+        "duration": 5280,
+        "offset": 276080,
+        "lang": "hi"
+    },
+    {
+        "text": "main thing jo aap yahan pe dekh rahe ho. SIP",
+        "duration": 4720,
+        "offset": 279120,
+        "lang": "hi"
+    },
+    {
+        "text": "that is Session Initialization Protocol.",
+        "duration": 6000,
+        "offset": 281360,
+        "lang": "hi"
+    },
+    {
+        "text": "RTP Real Time Protocol. Yeh do cheezein",
+        "duration": 5760,
+        "offset": 283840,
+        "lang": "hi"
+    },
+    {
+        "text": "hain jo hum use karne wale hain hamare VIP",
+        "duration": 4240,
+        "offset": 287360,
+        "lang": "hi"
+    },
+    {
+        "text": "ke andar. Theek hai? Ab agar hum iske upar baat",
+        "duration": 4319,
+        "offset": 289600,
+        "lang": "hi"
+    },
+    {
+        "text": "karein, the SIP protocol would be used to",
+        "duration": 4480,
+        "offset": 291600,
+        "lang": "hi"
+    },
+    {
+        "text": "establish, modify and terminate voice",
+        "duration": 4641,
+        "offset": 293919,
+        "lang": "hi"
+    },
+    {
+        "text": "sessions. Theek hai? This line is very important. Iska",
+        "duration": 5280,
+        "offset": 296080,
+        "lang": "hi"
+    },
+    {
+        "text": "meaning kya hai? That agar aapko kisi ko call",
+        "duration": 5040,
+        "offset": 298560,
+        "lang": "hi"
+    },
+    {
+        "text": "karna hai, initiate karna hai, I am not",
+        "duration": 4160,
+        "offset": 301360,
+        "lang": "hi"
+    },
+    {
+        "text": "saying ki transfer karna hai, koi just",
+        "duration": 4319,
+        "offset": 303600,
+        "lang": "hi"
+    },
+    {
+        "text": "initiate karna hai call. Aapko ek connection",
+        "duration": 4560,
+        "offset": 305520,
+        "lang": "hi"
+    },
+    {
+        "text": "establish karna hai ya phir aapko woh",
+        "duration": 4161,
+        "offset": 307919,
+        "lang": "hi"
+    },
+    {
+        "text": "terminate karna hai. This is what the SIP is",
+        "duration": 4800,
+        "offset": 310080,
+        "lang": "hi"
+    },
+    {
+        "text": "going to do. SIP ke upar aap actually voice",
+        "duration": 5280,
+        "offset": 312080,
+        "lang": "hi"
+    },
+    {
+        "text": "packets ko transfer nahi kar sakte. Just",
+        "duration": 4800,
+        "offset": 314880,
+        "lang": "hi"
+    },
+    {
+        "text": "the signal it's basically a signaling",
+        "duration": 5119,
+        "offset": 317360,
+        "lang": "hi"
+    },
+    {
+        "text": "protocol. Call kar rahe ho SIP ke upar. But",
+        "duration": 4799,
+        "offset": 319680,
+        "lang": "hi"
+    },
+    {
+        "text": "jab woh utha lega once the connection is",
+        "duration": 4720,
+        "offset": 322479,
+        "lang": "hi"
+    },
+    {
+        "text": "established then you make a RTP connection",
+        "duration": 6000,
+        "offset": 324479,
+        "lang": "hi"
+    },
+    {
+        "text": "that way. Okay? It encapsulates a SIP",
+        "duration": 5361,
+        "offset": 327199,
+        "lang": "hi"
+    },
+    {
+        "text": "connection packets on TCP packets using",
+        "duration": 4401,
+        "offset": 330479,
+        "lang": "hi"
+    },
+    {
+        "text": "socket API supported on the niche tag. Isko",
+        "duration": 4160,
+        "offset": 332560,
+        "lang": "hi"
+    },
+    {
+        "text": "aap abhi ke liye ignore kar sakte ho. And this",
+        "duration": 3920,
+        "offset": 334880,
+        "lang": "hi"
+    },
+    {
+        "text": "is basically your SIP session initialization",
+        "duration": 4160,
+        "offset": 336720,
+        "lang": "hi"
+    },
+    {
+        "text": "protocol. Toh, yeh kya kya hai? Yeh ek",
+        "duration": 4080,
+        "offset": 338800,
+        "lang": "hi"
+    },
+    {
+        "text": "application layer protocol hai jo signaling",
+        "duration": 3680,
+        "offset": 340880,
+        "lang": "hi"
+    },
+    {
+        "text": "ke andar kaam aata hai. As I just told you",
+        "duration": 3759,
+        "offset": 342880,
+        "lang": "hi"
+    },
+    {
+        "text": "for creating, modifying and terminating",
+        "duration": 4639,
+        "offset": 344560,
+        "lang": "hi"
+    },
+    {
+        "text": "sessions with one or more participants. These",
+        "duration": 4881,
+        "offset": 346639,
+        "lang": "hi"
+    },
+    {
+        "text": "sessions include internet phone calls,",
+        "duration": 4000,
+        "offset": 349199,
+        "lang": "hi"
+    },
+    {
+        "text": "multimedia distribution and",
+        "duration": 3920,
+        "offset": 351520,
+        "lang": "hi"
+    },
+    {
+        "text": "multimedia conferences. SIP invitations",
+        "duration": 4000,
+        "offset": 353199,
+        "lang": "hi"
+    },
+    {
+        "text": "used to create sessions carry on session",
+        "duration": 3599,
+        "offset": 355440,
+        "lang": "hi"
+    },
+    {
+        "text": "description that allow participants to",
+        "duration": 4161,
+        "offset": 357199,
+        "lang": "hi"
+    },
+    {
+        "text": "agree on a set uh compatible media",
+        "duration": 4880,
+        "offset": 359039,
+        "lang": "hi"
+    },
+    {
+        "text": "types. Agar aapne kabhi bhi WebRTC ke",
+        "duration": 4240,
+        "offset": 361360,
+        "lang": "hi"
+    },
+    {
+        "text": "upar kaam kara hai, that is Web Real Time",
+        "duration": 3521,
+        "offset": 363919,
+        "lang": "hi"
+    },
+    {
+        "text": "Connections. And uske andar specifically if",
+        "duration": 3840,
+        "offset": 365600,
+        "lang": "hi"
+    },
+    {
+        "text": "you have worked with selective forwarding",
+        "duration": 3840,
+        "offset": 367440,
+        "lang": "hi"
+    },
+    {
+        "text": "unit then you might have heard this term that",
+        "duration": 3440,
+        "offset": 369440,
+        "lang": "hi"
+    },
+    {
+        "text": "is sirf because uske andar kya hota hai?",
+        "duration": 3680,
+        "offset": 371280,
+        "lang": "hi"
+    },
+    {
+        "text": "you have to agree ki hum kis tarah ka media",
+        "duration": 4720,
+        "offset": 372880,
+        "lang": "hi"
+    },
+    {
+        "text": "type ko consume kar sakte hain? Aapki RTP",
+        "duration": 4480,
+        "offset": 374960,
+        "lang": "hi"
+    },
+    {
+        "text": "capabilities kya hai? Meri RTP",
+        "duration": 3360,
+        "offset": 377600,
+        "lang": "hi"
+    },
+    {
+        "text": "capabilities kya hai? And how we are going",
+        "duration": 3120,
+        "offset": 379440,
+        "lang": "hi"
+    },
+    {
+        "text": "to communicate? What is the protocol we",
+        "duration": 3679,
+        "offset": 380960,
+        "lang": "hi"
+    },
+    {
+        "text": "are deciding on we are agreeing on right?",
+        "duration": 4560,
+        "offset": 382560,
+        "lang": "hi"
+    },
+    {
+        "text": "Toh SIP yahan par woh sab cheezein karta hai. Okay?",
+        "duration": 4081,
+        "offset": 384639,
+        "lang": "hi"
+    },
+    {
+        "text": "SIP is not vertically integrated",
+        "duration": 3519,
+        "offset": 387120,
+        "lang": "hi"
+    },
+    {
+        "text": "communication system. That's what I told",
+        "duration": 4960,
+        "offset": 388720,
+        "lang": "hi"
+    },
+    {
+        "text": "you. SIP is rather a component that can be",
+        "duration": 5521,
+        "offset": 390639,
+        "lang": "hi"
+    },
+    {
+        "text": "used with other IETF protocols to",
+        "duration": 4720,
+        "offset": 393680,
+        "lang": "hi"
+    },
+    {
+        "text": "build complete multimedia architecture. The",
+        "duration": 5039,
+        "offset": 396160,
+        "lang": "hi"
+    },
+    {
+        "text": "reason is because SIP khud se videos ko ya",
+        "duration": 4799,
+        "offset": 398400,
+        "lang": "hi"
+    },
+    {
+        "text": "audios ko transfer nahi karta hai. It is",
+        "duration": 4321,
+        "offset": 401199,
+        "lang": "hi"
+    },
+    {
+        "text": "just for signaling thing. Right? Toh agar aap",
+        "duration": 3921,
+        "offset": 403199,
+        "lang": "hi"
+    },
+    {
+        "text": "yahan pe thoda neeche jaoge, this is basically",
+        "duration": 3440,
+        "offset": 405520,
+        "lang": "hi"
+    },
+    {
+        "text": "what it looks like. Toh, yeh ek diagram",
+        "duration": 4880,
+        "offset": 407120,
+        "lang": "hi"
+    },
+    {
+        "text": "hai. Agar Alice ko Bob ko phone karna hai, these",
+        "duration": 6160,
+        "offset": 408960,
+        "lang": "hi"
+    },
+    {
+        "text": "are your in between se proxies invite the",
+        "duration": 5440,
+        "offset": 412000,
+        "lang": "hi"
+    },
+    {
+        "text": "invite goes. Okay? And then you basically ring",
+        "duration": 4160,
+        "offset": 415120,
+        "lang": "hi"
+    },
+    {
+        "text": "the phone. So, yahan pe kya? Ek status code",
+        "duration": 3680,
+        "offset": 417440,
+        "lang": "hi"
+    },
+    {
+        "text": "hai 100. But 100 ka matlab hai ki haan usne phone",
+        "duration": 3600,
+        "offset": 419280,
+        "lang": "hi"
+    },
+    {
+        "text": "utha liya hai. Let's say ya 100 ka matlab hai",
+        "duration": 3680,
+        "offset": 421120,
+        "lang": "hi"
+    },
+    {
+        "text": "trying that okay the ring has been called. Toh",
+        "duration": 3840,
+        "offset": 422880,
+        "lang": "hi"
+    },
+    {
+        "text": "aapko woh sunega that okay the ring is going.",
+        "duration": 3440,
+        "offset": 424800,
+        "lang": "hi"
+    },
+    {
+        "text": "Then uske baad kya ho sakta hai? He can pick",
+        "duration": 3759,
+        "offset": 426720,
+        "lang": "hi"
+    },
+    {
+        "text": "up the call. Toh aapka 200 response back aayega.",
+        "duration": 4480,
+        "offset": 428240,
+        "lang": "hi"
+    },
+    {
+        "text": "200 means the phone has been ring. And uske baad",
+        "duration": 4160,
+        "offset": 430479,
+        "lang": "hi"
+    },
+    {
+        "text": "agar aap cut karte ho toh 200 se alawa koi",
+        "duration": 3919,
+        "offset": 432720,
+        "lang": "hi"
+    },
+    {
+        "text": "response aayega. So this is basically what the",
+        "duration": 4481,
+        "offset": 434639,
+        "lang": "hi"
+    },
+    {
+        "text": "SIP does. Okay? Toh agar aap yahan pe yeh wala",
+        "duration": 5840,
+        "offset": 436639,
+        "lang": "hi"
+    },
+    {
+        "text": "cheez padhoge uh kahan se hai yeh? Haan. Bob's",
+        "duration": 5760,
+        "offset": 439120,
+        "lang": "hi"
+    },
+    {
+        "text": "SIP phone indicates that this is 180 ring",
+        "duration": 4000,
+        "offset": 442479,
+        "lang": "hi"
+    },
+    {
+        "text": "response. Agar aapke paas 180 aa raha hai that",
+        "duration": 3439,
+        "offset": 444880,
+        "lang": "hi"
+    },
+    {
+        "text": "means ring ho raha hai. The call is basically",
+        "duration": 4321,
+        "offset": 446479,
+        "lang": "hi"
+    },
+    {
+        "text": "ringing which is routed back through the two",
+        "duration": 4000,
+        "offset": 448319,
+        "lang": "hi"
+    },
+    {
+        "text": "proxies in the reverse direction when",
+        "duration": 4720,
+        "offset": 450800,
+        "lang": "hi"
+    },
+    {
+        "text": "Alice soft phone receives 180 it passes this",
+        "duration": 5280,
+        "offset": 452319,
+        "lang": "hi"
+    },
+    {
+        "text": "information to Alice. Matlab Alice ko pata lag jaayega",
+        "duration": 4160,
+        "offset": 455520,
+        "lang": "hi"
+    },
+    {
+        "text": "ki saamne wale person ka phone ring kar raha",
+        "duration": 4081,
+        "offset": 457599,
+        "lang": "hi"
+    },
+    {
+        "text": "hai. Connected hai internet se. Okay? Then",
+        "duration": 3280,
+        "offset": 459680,
+        "lang": "hi"
+    },
+    {
+        "text": "uske baad kya ho gaya? In this example",
+        "duration": 3200,
+        "offset": 461680,
+        "lang": "hi"
+    },
+    {
+        "text": "Bob decides to answer the call. When he",
+        "duration": 4880,
+        "offset": 462960,
+        "lang": "hi"
+    },
+    {
+        "text": "picks up the handset the SIP phone sends 200",
+        "duration": 4960,
+        "offset": 464880,
+        "lang": "hi"
+    },
+    {
+        "text": "okay response indicating the call has been",
+        "duration": 4240,
+        "offset": 467840,
+        "lang": "hi"
+    },
+    {
+        "text": "answered. Aapke application ko pata lag jaayega.",
+        "duration": 5359,
+        "offset": 469840,
+        "lang": "hi"
+    },
+    {
+        "text": "The 200 okay contains a message body in our",
+        "duration": 6320,
+        "offset": 472080,
+        "lang": "hi"
+    },
+    {
+        "text": "case RTP packets. This is basically how the",
+        "duration": 5440,
+        "offset": 475199,
+        "lang": "hi"
+    },
+    {
+        "text": "SIP works. Okay? So wapas ek baar Cloud",
+        "duration": 4160,
+        "offset": 478400,
+        "lang": "hi"
+    },
+    {
+        "text": "Flare pe chalte hain. Toh agar aap yahan pe",
+        "duration": 3921,
+        "offset": 480639,
+        "lang": "hi"
+    },
+    {
+        "text": "thoda neeche chalte ho. Okay? So the you can just",
+        "duration": 4079,
+        "offset": 482560,
+        "lang": "hi"
+    },
+    {
+        "text": "ignore this whole thing. And if I just",
+        "duration": 3600,
+        "offset": 484560,
+        "lang": "hi"
+    },
+    {
+        "text": "scroll down this is basically the thing. Toh",
+        "duration": 4081,
+        "offset": 486639,
+        "lang": "hi"
+    },
+    {
+        "text": "SIP aapko samajh aa gaya hai. Sets up set up",
+        "duration": 6000,
+        "offset": 488160,
+        "lang": "hi"
+    },
+    {
+        "text": "and end the call. In the example above Alexis",
+        "duration": 6400,
+        "offset": 490720,
+        "lang": "hi"
+    },
+    {
+        "text": "VIP service probably used SIP to begin",
+        "duration": 6400,
+        "offset": 494160,
+        "lang": "hi"
+    },
+    {
+        "text": "connection between a her phone and the Bob's phone.",
+        "duration": 5199,
+        "offset": 497120,
+        "lang": "hi"
+    },
+    {
+        "text": "Mujhe nahi pata tha Alice ladki hai but chalo",
+        "duration": 3919,
+        "offset": 500560,
+        "lang": "hi"
+    },
+    {
+        "text": "koi baat nahi acchi baat hai. Real time",
+        "duration": 4000,
+        "offset": 502319,
+        "lang": "hi"
+    },
+    {
+        "text": "transport protocol. The next one that",
+        "duration": 4560,
+        "offset": 504479,
+        "lang": "hi"
+    },
+    {
+        "text": "comes the RTP. This is the protocol that",
+        "duration": 5280,
+        "offset": 506319,
+        "lang": "hi"
+    },
+    {
+        "text": "carries the actual audio and video of the",
+        "duration": 5201,
+        "offset": 509039,
+        "lang": "hi"
+    },
+    {
+        "text": "call. Toh yeh kya hai? RTP and RTP ka",
+        "duration": 4721,
+        "offset": 511599,
+        "lang": "hi"
+    },
+    {
+        "text": "hi ek aur version hai that is SRTP that is",
+        "duration": 4479,
+        "offset": 514240,
+        "lang": "hi"
+    },
+    {
+        "text": "Secure Real Time Transport Protocol.",
+        "duration": 4959,
+        "offset": 516320,
+        "lang": "hi"
+    },
+    {
+        "text": "Jaise HTTP aur HTTPS hota hai.",
+        "duration": 4240,
+        "offset": 518719,
+        "lang": "hi"
+    },
+    {
+        "text": "Similarly you have a secure. Iske andar",
+        "duration": 4240,
+        "offset": 521279,
+        "lang": "hi"
+    },
+    {
+        "text": "it's encrypted version of the RTP. Then",
+        "duration": 4560,
+        "offset": 522959,
+        "lang": "hi"
+    },
+    {
+        "text": "you have this thing that is a media gateway",
+        "duration": 3921,
+        "offset": 525519,
+        "lang": "hi"
+    },
+    {
+        "text": "control protocol MGCP controls",
+        "duration": 4000,
+        "offset": 527519,
+        "lang": "hi"
+    },
+    {
+        "text": "connection between the VIP and the public",
+        "duration": 4560,
+        "offset": 529440,
+        "lang": "hi"
+    },
+    {
+        "text": "switch network protocols. Ab agar aap is",
+        "duration": 5921,
+        "offset": 531519,
+        "lang": "hi"
+    },
+    {
+        "text": "MGCP ke upar search karte ho you won't get",
+        "duration": 5440,
+        "offset": 534000,
+        "lang": "hi"
+    },
+    {
+        "text": "a lot of information though. But agar aap isko dekhte",
+        "duration": 5360,
+        "offset": 537440,
+        "lang": "hi"
+    },
+    {
+        "text": "ho yeh kya hai? Yeh is a VIP signaling",
+        "duration": 5519,
+        "offset": 539440,
+        "lang": "hi"
+    },
+    {
+        "text": "protocol that handles communication between",
+        "duration": 5280,
+        "offset": 542800,
+        "lang": "hi"
+    },
+    {
+        "text": "central call controller. Okay? The call agent",
+        "duration": 5681,
+        "offset": 544959,
+        "lang": "hi"
+    },
+    {
+        "text": "and the media gateways. Toh agar hum yahan pe",
+        "duration": 5120,
+        "offset": 548080,
+        "lang": "hi"
+    },
+    {
+        "text": "thoda sa scroll down karte hain. Ya so you",
+        "duration": 4560,
+        "offset": 550640,
+        "lang": "hi"
+    },
+    {
+        "text": "can see that yeh kya kaam karta yeh kaam karta",
+        "duration": 4800,
+        "offset": 553200,
+        "lang": "hi"
+    },
+    {
+        "text": "hai H.248 ke upar. You know pehle kya hota",
+        "duration": 5759,
+        "offset": 555200,
+        "lang": "hi"
+    },
+    {
+        "text": "tha? H.3 something hota tha. I don't haan",
+        "duration": 5519,
+        "offset": 558000,
+        "lang": "hi"
+    },
+    {
+        "text": "H.323 hota tha. Toh yeh kya karte the? Jo",
+        "duration": 4481,
+        "offset": 560959,
+        "lang": "hi"
+    },
+    {
+        "text": "SIP transfer ho raha hai it used to be",
+        "duration": 3760,
+        "offset": 563519,
+        "lang": "hi"
+    },
+    {
+        "text": "happening on the binary based. Okay? Yeh",
+        "duration": 3600,
+        "offset": 565440,
+        "lang": "hi"
+    },
+    {
+        "text": "binary based pe hota tha jo ki ab use",
+        "duration": 3680,
+        "offset": 567279,
+        "lang": "hi"
+    },
+    {
+        "text": "nahi hota hai. Toh now MGCP which works",
+        "duration": 4799,
+        "offset": 569040,
+        "lang": "hi"
+    },
+    {
+        "text": "on H.248 is a standard protocol for",
+        "duration": 5601,
+        "offset": 570959,
+        "lang": "hi"
+    },
+    {
+        "text": "handling the signaling and session management",
+        "duration": 4560,
+        "offset": 573839,
+        "lang": "hi"
+    },
+    {
+        "text": "during the multimedia conference. Toh",
+        "duration": 4000,
+        "offset": 576560,
+        "lang": "hi"
+    },
+    {
+        "text": "this is basically like a proxy in a bit.",
+        "duration": 3761,
+        "offset": 578399,
+        "lang": "hi"
+    },
+    {
+        "text": "Like it's basically a central system that",
+        "duration": 3680,
+        "offset": 580560,
+        "lang": "hi"
+    },
+    {
+        "text": "handles all the connections. Okay? Iske baare",
+        "duration": 3760,
+        "offset": 582160,
+        "lang": "hi"
+    },
+    {
+        "text": "mein mujhe zyada information nahi mili. For some",
+        "duration": 3520,
+        "offset": 584240,
+        "lang": "hi"
+    },
+    {
+        "text": "how maine kaafi research kiya. Toh this was",
+        "duration": 4320,
+        "offset": 585920,
+        "lang": "hi"
+    },
+    {
+        "text": "one thing. Ab aage chalte hain. The thing is that",
+        "duration": 4720,
+        "offset": 587760,
+        "lang": "hi"
+    },
+    {
+        "text": "dekho jo yeh VoIP protocol hai it's a",
+        "duration": 3840,
+        "offset": 590240,
+        "lang": "hi"
+    },
+    {
+        "text": "well documented protocol. This is what",
+        "duration": 3840,
+        "offset": 592480,
+        "lang": "hi"
+    },
+    {
+        "text": "they are saying. But still jo badi companies hain",
+        "duration": 4400,
+        "offset": 594080,
+        "lang": "hi"
+    },
+    {
+        "text": "like Microsoft woh inko directly use",
+        "duration": 4240,
+        "offset": 596320,
+        "lang": "hi"
+    },
+    {
+        "text": "nahi karti hain. They have written a proprietary",
+        "duration": 3919,
+        "offset": 598480,
+        "lang": "hi"
+    },
+    {
+        "text": "on top of it. For example Skip ki baat",
+        "duration": 4320,
+        "offset": 600560,
+        "lang": "hi"
+    },
+    {
+        "text": "karte hain. Skip protocol yeh SIP ke andar",
+        "duration": 5281,
+        "offset": 602399,
+        "lang": "hi"
+    },
+    {
+        "text": "bana tha in 20 2014 and basically Microsoft",
+        "duration": 4800,
+        "offset": 604880,
+        "lang": "hi"
+    },
+    {
+        "text": "ne isko acquire kar liya tha. And uske upar",
+        "duration": 3839,
+        "offset": 607680,
+        "lang": "hi"
+    },
+    {
+        "text": "they have written their own protocol that is known",
+        "duration": 4399,
+        "offset": 609680,
+        "lang": "hi"
+    },
+    {
+        "text": "as Microsoft Notification Protocol 24 MNP",
+        "duration": 5201,
+        "offset": 611519,
+        "lang": "hi"
+    },
+    {
+        "text": "24 toh they have written their own like similarly",
+        "duration": 4561,
+        "offset": 614079,
+        "lang": "hi"
+    },
+    {
+        "text": "you have this SCCP right jo Sisco ne",
+        "duration": 4320,
+        "offset": 616720,
+        "lang": "hi"
+    },
+    {
+        "text": "likha then you have this IAX jo Astick ne",
+        "duration": 4879,
+        "offset": 618640,
+        "lang": "hi"
+    },
+    {
+        "text": "likha toh basically jo yeh companies hoti hain jab",
+        "duration": 4239,
+        "offset": 621040,
+        "lang": "hi"
+    },
+    {
+        "text": "yeh VoIP implement karti hai jab aap",
+        "duration": 4641,
+        "offset": 623519,
+        "lang": "hi"
+    },
+    {
+        "text": "WhatsApp call karte ho yeh hai okay these are",
+        "duration": 4800,
+        "offset": 625279,
+        "lang": "hi"
+    },
+    {
+        "text": "publicly well documented protocols aap",
+        "duration": 4560,
+        "offset": 628160,
+        "lang": "hi"
+    },
+    {
+        "text": "inko implement kar sakte ho bahut easily but",
+        "duration": 4801,
+        "offset": 630079,
+        "lang": "hi"
+    },
+    {
+        "text": "these big companies actually use this different",
+        "duration": 4480,
+        "offset": 632720,
+        "lang": "hi"
+    },
+    {
+        "text": "thing but mainly jo poora ka poora khel hai is",
+        "duration": 5519,
+        "offset": 634880,
+        "lang": "hi"
+    },
+    {
+        "text": "poore video ke andar that is of the VoIP",
+        "duration": 6400,
+        "offset": 637200,
+        "lang": "hi"
+    },
+    {
+        "text": "ke andar that is SR the this is the uh real",
+        "duration": 5761,
+        "offset": 640399,
+        "lang": "hi"
+    },
+    {
+        "text": "time protocol that is RTP and the SIP.",
+        "duration": 4560,
+        "offset": 643600,
+        "lang": "hi"
+    },
+    {
+        "text": "Toh SIP kya karta hai? SIP basically handles",
+        "duration": 4720,
+        "offset": 646160,
+        "lang": "hi"
+    },
+    {
+        "text": "a session initialization. That means call kar",
+        "duration": 4799,
+        "offset": 648160,
+        "lang": "hi"
+    },
+    {
+        "text": "rahe ho toh saamne wale person ka phone ring",
+        "duration": 4399,
+        "offset": 650880,
+        "lang": "hi"
+    },
+    {
+        "text": "karega. Uthaoge toh mere ko acknowledgment",
+        "duration": 4481,
+        "offset": 652959,
+        "lang": "hi"
+    },
+    {
+        "text": "milega. This is the part of SIP ki hum",
+        "duration": 5441,
+        "offset": 655279,
+        "lang": "hi"
+    },
+    {
+        "text": "dono ka handshake karvaega. But the RTP the",
+        "duration": 5120,
+        "offset": 657440,
+        "lang": "hi"
+    },
+    {
+        "text": "real time protocol jiske upar hum YouTube",
+        "duration": 3600,
+        "offset": 660720,
+        "lang": "hi"
+    },
+    {
+        "text": "ke upar live streams bhi karte hain. This",
+        "duration": 3680,
+        "offset": 662560,
+        "lang": "hi"
+    },
+    {
+        "text": "is the one jiske upar actual audio aur",
+        "duration": 4000,
+        "offset": 664320,
+        "lang": "hi"
+    },
+    {
+        "text": "video transfer hota hai. So this is your",
+        "duration": 4960,
+        "offset": 666240,
+        "lang": "hi"
+    },
+    {
+        "text": "VIP and yeh poora process milliseconds",
+        "duration": 4240,
+        "offset": 668320,
+        "lang": "hi"
+    },
+    {
+        "text": "mein hota hai without any delay.",
+        "duration": 3199,
+        "offset": 671200,
+        "lang": "hi"
+    },
+    {
+        "text": "Multiplexing mein hota hai. Dono tarah",
+        "duration": 3839,
+        "offset": 672560,
+        "lang": "hi"
+    },
+    {
+        "text": "se log baat kar sakte hain. Toh yeh tha aapka ek",
+        "duration": 5041,
+        "offset": 674399,
+        "lang": "hi"
+    },
+    {
+        "text": "high level design of how a Voice over",
+        "duration": 4641,
+        "offset": 676399,
+        "lang": "hi"
+    },
+    {
+        "text": "Internet Protocol works. Toh it's",
+        "duration": 3360,
+        "offset": 679440,
+        "lang": "hi"
+    },
+    {
+        "text": "basically a combination of multiple",
+        "duration": 3919,
+        "offset": 681040,
+        "lang": "hi"
+    },
+    {
+        "text": "protocols. So ek bahut hi quick video",
+        "duration": 3920,
+        "offset": 682800,
+        "lang": "hi"
+    },
+    {
+        "text": "tha because I was recently just studying",
+        "duration": 4241,
+        "offset": 684959,
+        "lang": "hi"
+    },
+    {
+        "text": "about some reading about VIP and maine",
+        "duration": 4799,
+        "offset": 686720,
+        "lang": "hi"
+    },
+    {
+        "text": "kabhi VIP ko itna matlab thoda deep mein",
+        "duration": 3840,
+        "offset": 689200,
+        "lang": "hi"
+    },
+    {
+        "text": "jaake nahi dekha tha. Waise toh aap yeh wala",
+        "duration": 3201,
+        "offset": 691519,
+        "lang": "hi"
+    },
+    {
+        "text": "article zaroor padhna. Okay? You will get the",
+        "duration": 4400,
+        "offset": 693040,
+        "lang": "hi"
+    },
+    {
+        "text": "link agar aap search karoge. So this is one",
+        "duration": 4880,
+        "offset": 694720,
+        "lang": "hi"
+    },
+    {
+        "text": "thing by the Columbia University. Toh if",
+        "duration": 3839,
+        "offset": 697440,
+        "lang": "hi"
+    },
+    {
+        "text": "you are interested just do read because uske",
+        "duration": 3520,
+        "offset": 699600,
+        "lang": "hi"
+    },
+    {
+        "text": "andar yeh bhi diya gaya hai ki ek SIP",
+        "duration": 4401,
+        "offset": 701279,
+        "lang": "hi"
+    },
+    {
+        "text": "packet kaisa dikhta hai. Okay? Uske andar",
+        "duration": 4560,
+        "offset": 703120,
+        "lang": "hi"
+    },
+    {
+        "text": "kya-kya information stored hai. Uske",
+        "duration": 5120,
+        "offset": 705680,
+        "lang": "hi"
+    },
+    {
+        "text": "baad agar aap yahan pe baat karoge of the RTP",
+        "duration": 4399,
+        "offset": 707680,
+        "lang": "hi"
+    },
+    {
+        "text": "toh uske andar woh kya-kya cheezein hoti",
+        "duration": 3520,
+        "offset": 710800,
+        "lang": "hi"
+    },
+    {
+        "text": "hain. Toh they have given everything and even how",
+        "duration": 4320,
+        "offset": 712079,
+        "lang": "hi"
+    },
+    {
+        "text": "much memory it can take agar iske upar",
+        "duration": 3840,
+        "offset": 714320,
+        "lang": "hi"
+    },
+    {
+        "text": "DDoS attacks hote hain toh usko hum kaise",
+        "duration": 3680,
+        "offset": 716399,
+        "lang": "hi"
+    },
+    {
+        "text": "bacha sakte hain? Right? Toh woh sab cheezein bhi",
+        "duration": 3760,
+        "offset": 718160,
+        "lang": "hi"
+    },
+    {
+        "text": "yahan par hai. Toh I would highly recommend if",
+        "duration": 3921,
+        "offset": 720079,
+        "lang": "hi"
+    },
+    {
+        "text": "you want to go in deep to this rabbit hole",
+        "duration": 4479,
+        "offset": 721920,
+        "lang": "hi"
+    },
+    {
+        "text": "just give it a shot. But uh this was your",
+        "duration": 4160,
+        "offset": 724000,
+        "lang": "hi"
+    },
+    {
+        "text": "Voice over Internet Protocol. So pretty",
+        "duration": 3201,
+        "offset": 726399,
+        "lang": "hi"
+    },
+    {
+        "text": "interesting topic, pretty interesting",
+        "duration": 3359,
+        "offset": 728160,
+        "lang": "hi"
+    },
+    {
+        "text": "things. Hum aisi cheezon ko day to day use",
+        "duration": 3679,
+        "offset": 729600,
+        "lang": "hi"
+    },
+    {
+        "text": "karte hain but we never really go into the",
+        "duration": 3361,
+        "offset": 731519,
+        "lang": "hi"
+    },
+    {
+        "text": "depth. Right? Ki yeh cheez kaise kaam karti",
+        "duration": 3921,
+        "offset": 733279,
+        "lang": "hi"
+    },
+    {
+        "text": "hain. So we should take a moment to thank and",
+        "duration": 4000,
+        "offset": 734880,
+        "lang": "hi"
+    },
+    {
+        "text": "you know to respect the engineers what they",
+        "duration": 3759,
+        "offset": 737200,
+        "lang": "hi"
+    },
+    {
+        "text": "have built. So that was all about this",
+        "duration": 3440,
+        "offset": 738880,
+        "lang": "hi"
+    },
+    {
+        "text": "video. Milte hain hum aapko next video",
+        "duration": 3440,
+        "offset": 740959,
+        "lang": "hi"
+    },
+    {
+        "text": "ke andar. Until then, bye bye and take",
+        "duration": 4160,
+        "offset": 742320,
+        "lang": "hi"
+    },
+    {
+        "text": "care.",
+        "duration": 2081,
+        "offset": 744399,
+        "lang": "hi"
+    }
+]

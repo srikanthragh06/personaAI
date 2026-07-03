@@ -1,0 +1,1352 @@
+[
+    {
+        "text": "Alright. So hey everyone, welcome back. Welcome",
+        "duration": 4720,
+        "offset": 160,
+        "lang": "hi"
+    },
+    {
+        "text": "back to another exciting video and in this",
+        "duration": 4480,
+        "offset": 2399,
+        "lang": "hi"
+    },
+    {
+        "text": "particular video I have something very",
+        "duration": 3759,
+        "offset": 4880,
+        "lang": "hi"
+    },
+    {
+        "text": "exciting for you. So in this particular",
+        "duration": 4800,
+        "offset": 6879,
+        "lang": "hi"
+    },
+    {
+        "text": "video I want to show you a model an",
+        "duration": 6241,
+        "offset": 8639,
+        "lang": "hi"
+    },
+    {
+        "text": "application that can generate images and not",
+        "duration": 5921,
+        "offset": 11679,
+        "lang": "hi"
+    },
+    {
+        "text": "just generate images it can reason your images",
+        "duration": 4800,
+        "offset": 14880,
+        "lang": "hi"
+    },
+    {
+        "text": "before generating it. So, in this particular",
+        "duration": 4320,
+        "offset": 17600,
+        "lang": "hi"
+    },
+    {
+        "text": "video, I want to show you a model known as",
+        "duration": 4960,
+        "offset": 19680,
+        "lang": "hi"
+    },
+    {
+        "text": "Univen on Lu Labs. Which can generate",
+        "duration": 5119,
+        "offset": 21920,
+        "lang": "hi"
+    },
+    {
+        "text": "amazing images, which can generate amazing",
+        "duration": 4799,
+        "offset": 24640,
+        "lang": "hi"
+    },
+    {
+        "text": "infographics. And you don't have to give",
+        "duration": 4080,
+        "offset": 27039,
+        "lang": "hi"
+    },
+    {
+        "text": "long short prompts. You just give it a",
+        "duration": 4081,
+        "offset": 29439,
+        "lang": "hi"
+    },
+    {
+        "text": "prompt. It thinks before reasoning. It",
+        "duration": 5201,
+        "offset": 31119,
+        "lang": "hi"
+    },
+    {
+        "text": "thinks about everything and then generates a",
+        "duration": 4879,
+        "offset": 33520,
+        "lang": "hi"
+    },
+    {
+        "text": "studio quality images. So with that",
+        "duration": 4079,
+        "offset": 36320,
+        "lang": "hi"
+    },
+    {
+        "text": "let's start with the video. So yahan par",
+        "duration": 3921,
+        "offset": 38399,
+        "lang": "hi"
+    },
+    {
+        "text": "I am talking about Luma Labs. So this is",
+        "duration": 3840,
+        "offset": 40399,
+        "lang": "hi"
+    },
+    {
+        "text": "the landing page of the Luma Labs. And let",
+        "duration": 3520,
+        "offset": 42320,
+        "lang": "hi"
+    },
+    {
+        "text": "me show you how it works. Okay? So what you",
+        "duration": 3441,
+        "offset": 44239,
+        "lang": "hi"
+    },
+    {
+        "text": "have to do is aapko yahan par karna hoga ek",
+        "duration": 3680,
+        "offset": 45840,
+        "lang": "hi"
+    },
+    {
+        "text": "sign in. So I have already made an account.",
+        "duration": 3440,
+        "offset": 47680,
+        "lang": "hi"
+    },
+    {
+        "text": "toh main directly yahan par sign up kar",
+        "duration": 3519,
+        "offset": 49520,
+        "lang": "hi"
+    },
+    {
+        "text": "sign in karne wala hoon. So I can just do",
+        "duration": 4480,
+        "offset": 51120,
+        "lang": "hi"
+    },
+    {
+        "text": "a continue with Google. So this is the log",
+        "duration": 4401,
+        "offset": 53039,
+        "lang": "hi"
+    },
+    {
+        "text": "in page. Yeh mera email address hai which I",
+        "duration": 4560,
+        "offset": 55600,
+        "lang": "hi"
+    },
+    {
+        "text": "am choosing right here. And let's just wait",
+        "duration": 5439,
+        "offset": 57440,
+        "lang": "hi"
+    },
+    {
+        "text": "for a while. Okay? So you can see that maine",
+        "duration": 4800,
+        "offset": 60160,
+        "lang": "hi"
+    },
+    {
+        "text": "yahan par kar liya hai sign in. And there is",
+        "duration": 4001,
+        "offset": 62879,
+        "lang": "hi"
+    },
+    {
+        "text": "a model that is Univen jiske baare mein main",
+        "duration": 3839,
+        "offset": 64960,
+        "lang": "hi"
+    },
+    {
+        "text": "baat kar raha tha. So, ek kaam karte hain.",
+        "duration": 3760,
+        "offset": 66880,
+        "lang": "hi"
+    },
+    {
+        "text": "let's create a new board. Toh main pehle",
+        "duration": 3841,
+        "offset": 68799,
+        "lang": "hi"
+    },
+    {
+        "text": "bhi thoda sa kuch applications build kar",
+        "duration": 3760,
+        "offset": 70640,
+        "lang": "hi"
+    },
+    {
+        "text": "raha tha. Kuch photos build kar raha tha. So,",
+        "duration": 3760,
+        "offset": 72640,
+        "lang": "hi"
+    },
+    {
+        "text": "let me create a new board right here and",
+        "duration": 4320,
+        "offset": 74400,
+        "lang": "hi"
+    },
+    {
+        "text": "show you that how this particular model works.",
+        "duration": 4079,
+        "offset": 76400,
+        "lang": "hi"
+    },
+    {
+        "text": "Okay? So, yahan par aap kya kar sakte ho? Aap",
+        "duration": 3520,
+        "offset": 78720,
+        "lang": "hi"
+    },
+    {
+        "text": "multiple art boards bana sakte ho. So,",
+        "duration": 4000,
+        "offset": 80479,
+        "lang": "hi"
+    },
+    {
+        "text": "this is one of my model. And you can see",
+        "duration": 4000,
+        "offset": 82240,
+        "lang": "hi"
+    },
+    {
+        "text": "yahan par mere paas ek button hai generate image",
+        "duration": 3521,
+        "offset": 84479,
+        "lang": "hi"
+    },
+    {
+        "text": "ka. Okay? You even have generate video. But",
+        "duration": 3680,
+        "offset": 86240,
+        "lang": "hi"
+    },
+    {
+        "text": "pehle generate image ko dekhte hain. You have",
+        "duration": 4479,
+        "offset": 88000,
+        "lang": "hi"
+    },
+    {
+        "text": "multiple models. But yahan par the best model",
+        "duration": 4800,
+        "offset": 89920,
+        "lang": "hi"
+    },
+    {
+        "text": "that I have you I have been using is",
+        "duration": 4881,
+        "offset": 92479,
+        "lang": "hi"
+    },
+    {
+        "text": "Univen. Okay? So Univen kya karta hai? Aap",
+        "duration": 4079,
+        "offset": 94720,
+        "lang": "hi"
+    },
+    {
+        "text": "yahan par kya kar sakte ho? You can give your",
+        "duration": 2880,
+        "offset": 97360,
+        "lang": "hi"
+    },
+    {
+        "text": "reference images and you can give",
+        "duration": 3280,
+        "offset": 98799,
+        "lang": "hi"
+    },
+    {
+        "text": "instructions, you can give the output",
+        "duration": 3600,
+        "offset": 100240,
+        "lang": "hi"
+    },
+    {
+        "text": "style. And this is how basically it",
+        "duration": 4801,
+        "offset": 102079,
+        "lang": "hi"
+    },
+    {
+        "text": "works. Ab yahan par the main thing is that kis",
+        "duration": 5200,
+        "offset": 103840,
+        "lang": "hi"
+    },
+    {
+        "text": "tarah ki images yeh generate kar sakta hai. It's",
+        "duration": 4320,
+        "offset": 106880,
+        "lang": "hi"
+    },
+    {
+        "text": "not really just about the product images",
+        "duration": 5039,
+        "offset": 109040,
+        "lang": "hi"
+    },
+    {
+        "text": "ya phir thumbnails. It can generate any kind",
+        "duration": 4959,
+        "offset": 111200,
+        "lang": "hi"
+    },
+    {
+        "text": "of image. For example, main aapko ek demo",
+        "duration": 3761,
+        "offset": 114079,
+        "lang": "hi"
+    },
+    {
+        "text": "deta hoon. Let's say I want to show you that",
+        "duration": 3201,
+        "offset": 116159,
+        "lang": "hi"
+    },
+    {
+        "text": "how a reverse proxy works. How",
+        "duration": 5279,
+        "offset": 117840,
+        "lang": "hi"
+    },
+    {
+        "text": "Nginx works. Okay? So, ah you know draw a",
+        "duration": 5280,
+        "offset": 119360,
+        "lang": "hi"
+    },
+    {
+        "text": "diagram",
+        "duration": 7760,
+        "offset": 123119,
+        "lang": "hi"
+    },
+    {
+        "text": "for Nginx okay showing how a reverse",
+        "duration": 11040,
+        "offset": 124640,
+        "lang": "hi"
+    },
+    {
+        "text": "proxy and SSL termination works. You",
+        "duration": 6881,
+        "offset": 130879,
+        "lang": "hi"
+    },
+    {
+        "text": "can see bahut hi ek vague, bahut hi ek simple",
+        "duration": 3600,
+        "offset": 135680,
+        "lang": "hi"
+    },
+    {
+        "text": "prompt hai. Let's click on the create",
+        "duration": 3199,
+        "offset": 137760,
+        "lang": "hi"
+    },
+    {
+        "text": "button. Toh jaise hi hum isko create karenge,",
+        "duration": 3920,
+        "offset": 139280,
+        "lang": "hi"
+    },
+    {
+        "text": "what it does is? Yeh pehle reason karta hai. Yeh",
+        "duration": 4321,
+        "offset": 140959,
+        "lang": "hi"
+    },
+    {
+        "text": "pehle usko understand karta hai ki user",
+        "duration": 5119,
+        "offset": 143200,
+        "lang": "hi"
+    },
+    {
+        "text": "chahta kya hai. So it does a reasoning, it does",
+        "duration": 6240,
+        "offset": 145280,
+        "lang": "hi"
+    },
+    {
+        "text": "all the calculations, it does all the behind the",
+        "duration": 4961,
+        "offset": 148319,
+        "lang": "hi"
+    },
+    {
+        "text": "things. And uske baad yeh aapke liye ek bahut",
+        "duration": 3680,
+        "offset": 151520,
+        "lang": "hi"
+    },
+    {
+        "text": "hi fast manner mein image generate kar dega.",
+        "duration": 3760,
+        "offset": 153280,
+        "lang": "hi"
+    },
+    {
+        "text": "So, you can see my image generation is in",
+        "duration": 3200,
+        "offset": 155200,
+        "lang": "hi"
+    },
+    {
+        "text": "progress. Toh, isko thoda sa hum fast",
+        "duration": 4919,
+        "offset": 157040,
+        "lang": "hi"
+    },
+    {
+        "text": "forward karte hain.",
+        "duration": 3559,
+        "offset": 158400,
+        "lang": "hi"
+    },
+    {
+        "text": "And you can see I got the image, right? You",
+        "duration": 4000,
+        "offset": 162319,
+        "lang": "hi"
+    },
+    {
+        "text": "can see client HTTPS which is",
+        "duration": 4321,
+        "offset": 164319,
+        "lang": "hi"
+    },
+    {
+        "text": "encrypted. There is an SSL termination",
+        "duration": 3601,
+        "offset": 166319,
+        "lang": "hi"
+    },
+    {
+        "text": "amazing and then there is a reverse",
+        "duration": 3120,
+        "offset": 168640,
+        "lang": "hi"
+    },
+    {
+        "text": "proxy to multiple servers it can generate",
+        "duration": 3840,
+        "offset": 169920,
+        "lang": "hi"
+    },
+    {
+        "text": "it. For example ab iske upar main ek follow",
+        "duration": 4880,
+        "offset": 171760,
+        "lang": "hi"
+    },
+    {
+        "text": "up prompt bhi de sakta hoon. That make all the",
+        "duration": 8960,
+        "offset": 173760,
+        "lang": "hi"
+    },
+    {
+        "text": "things okay in 3D manner and use real images",
+        "duration": 11679,
+        "offset": 176640,
+        "lang": "hi"
+    },
+    {
+        "text": "for Nginx and servers in 3D model.",
+        "duration": 7439,
+        "offset": 182720,
+        "lang": "hi"
+    },
+    {
+        "text": "That's it. Enter kiya. Toh maine kya kiya?",
+        "duration": 3441,
+        "offset": 188319,
+        "lang": "hi"
+    },
+    {
+        "text": "Maine usko ek follow up prompt diya. Now",
+        "duration": 3041,
+        "offset": 190159,
+        "lang": "hi"
+    },
+    {
+        "text": "you can see what it is going to do is it",
+        "duration": 3280,
+        "offset": 191760,
+        "lang": "hi"
+    },
+    {
+        "text": "is going to reason it first. Okay? So",
+        "duration": 4160,
+        "offset": 193200,
+        "lang": "hi"
+    },
+    {
+        "text": "designing and isko hum phir se kya karte",
+        "duration": 3600,
+        "offset": 195040,
+        "lang": "hi"
+    },
+    {
+        "text": "hain? Thoda sa fast forward karte hain. So",
+        "duration": 3120,
+        "offset": 197360,
+        "lang": "hi"
+    },
+    {
+        "text": "that you can see how well the outputs are",
+        "duration": 5080,
+        "offset": 198640,
+        "lang": "hi"
+    },
+    {
+        "text": "being generated.",
+        "duration": 3240,
+        "offset": 200480,
+        "lang": "hi"
+    },
+    {
+        "text": "And here we go. So you can see that now",
+        "duration": 4080,
+        "offset": 209280,
+        "lang": "hi"
+    },
+    {
+        "text": "everything is in 3D. And if I expand",
+        "duration": 4161,
+        "offset": 210959,
+        "lang": "hi"
+    },
+    {
+        "text": "this particular image na you can see if I",
+        "duration": 3599,
+        "offset": 213360,
+        "lang": "hi"
+    },
+    {
+        "text": "can expand it. You can see it's actually",
+        "duration": 3759,
+        "offset": 215120,
+        "lang": "hi"
+    },
+    {
+        "text": "a very high quality images and everything",
+        "duration": 4401,
+        "offset": 216959,
+        "lang": "hi"
+    },
+    {
+        "text": "is working good. And not just technical",
+        "duration": 4000,
+        "offset": 218879,
+        "lang": "hi"
+    },
+    {
+        "text": "images. Woh toh maine just ek example",
+        "duration": 3439,
+        "offset": 221360,
+        "lang": "hi"
+    },
+    {
+        "text": "diya hai for technical images. What I",
+        "duration": 3920,
+        "offset": 222879,
+        "lang": "hi"
+    },
+    {
+        "text": "can even do is agar main ek aur new artboard",
+        "duration": 4000,
+        "offset": 224799,
+        "lang": "hi"
+    },
+    {
+        "text": "banata hoon. Agar aap let's say film making",
+        "duration": 4080,
+        "offset": 226799,
+        "lang": "hi"
+    },
+    {
+        "text": "mein this interest rakhte hain toh you can even",
+        "duration": 4241,
+        "offset": 228799,
+        "lang": "hi"
+    },
+    {
+        "text": "do something like this. Like cinematic still",
+        "duration": 4720,
+        "offset": 230879,
+        "lang": "hi"
+    },
+    {
+        "text": "of a deserted gas station at night with a",
+        "duration": 5440,
+        "offset": 233040,
+        "lang": "hi"
+    },
+    {
+        "text": "A24 film style dramatic lighting 35 mm",
+        "duration": 5041,
+        "offset": 235599,
+        "lang": "hi"
+    },
+    {
+        "text": "ka a film grain. Toh aap is tarah ke",
+        "duration": 3679,
+        "offset": 238480,
+        "lang": "hi"
+    },
+    {
+        "text": "prompts bhi de sakte ho. And let's see",
+        "duration": 3519,
+        "offset": 240640,
+        "lang": "hi"
+    },
+    {
+        "text": "how well this particular thing generates. Okay?",
+        "duration": 3681,
+        "offset": 242159,
+        "lang": "hi"
+    },
+    {
+        "text": "So it was a very simple prompt. Matlab mere",
+        "duration": 3280,
+        "offset": 244159,
+        "lang": "hi"
+    },
+    {
+        "text": "ko ek desert ke andar ek gas station ka ek",
+        "duration": 3840,
+        "offset": 245840,
+        "lang": "hi"
+    },
+    {
+        "text": "cinematic shot chahiye. So let's see how well",
+        "duration": 4000,
+        "offset": 247439,
+        "lang": "hi"
+    },
+    {
+        "text": "it can generate these kind of images jisme",
+        "duration": 4080,
+        "offset": 249680,
+        "lang": "hi"
+    },
+    {
+        "text": "cinematic, AI film makers aur us cheez ke",
+        "duration": 6841,
+        "offset": 251439,
+        "lang": "hi"
+    },
+    {
+        "text": "liye. So let's just wait for a while.",
+        "duration": 4520,
+        "offset": 253760,
+        "lang": "hi"
+    },
+    {
+        "text": "So see here is the image. You can see that jo",
+        "duration": 4960,
+        "offset": 259519,
+        "lang": "hi"
+    },
+    {
+        "text": "hamari image yahan par generate hui and I can",
+        "duration": 4240,
+        "offset": 262000,
+        "lang": "hi"
+    },
+    {
+        "text": "just expand it. So you can see this is the",
+        "duration": 4160,
+        "offset": 264479,
+        "lang": "hi"
+    },
+    {
+        "text": "real image that generated. And not just that",
+        "duration": 4399,
+        "offset": 266240,
+        "lang": "hi"
+    },
+    {
+        "text": "aap yahan pe memes bhi generate kar sakte. So if",
+        "duration": 3921,
+        "offset": 268639,
+        "lang": "hi"
+    },
+    {
+        "text": "I go into the Univen you can even generate some",
+        "duration": 4161,
+        "offset": 270639,
+        "lang": "hi"
+    },
+    {
+        "text": "memes. Ah so this is a meme prompt. Toh",
+        "duration": 4079,
+        "offset": 272560,
+        "lang": "hi"
+    },
+    {
+        "text": "agar hum isko karte hain create, toh ab yeh",
+        "duration": 4000,
+        "offset": 274800,
+        "lang": "hi"
+    },
+    {
+        "text": "mere liye ek meme bhi generate kar sakta hai. Any",
+        "duration": 4241,
+        "offset": 276639,
+        "lang": "hi"
+    },
+    {
+        "text": "kind of image, okay? Any kind of image it",
+        "duration": 4320,
+        "offset": 278800,
+        "lang": "hi"
+    },
+    {
+        "text": "can generate. The main use you unique thing is",
+        "duration": 4640,
+        "offset": 280880,
+        "lang": "hi"
+    },
+    {
+        "text": "that it reasons before generating. Yeh sirf",
+        "duration": 4240,
+        "offset": 283120,
+        "lang": "hi"
+    },
+    {
+        "text": "aapke prompt ko leke generate nahi karta.",
+        "duration": 4640,
+        "offset": 285520,
+        "lang": "hi"
+    },
+    {
+        "text": "it reasons it imagines it basically",
+        "duration": 4640,
+        "offset": 287360,
+        "lang": "hi"
+    },
+    {
+        "text": "understands what you want to say. And",
+        "duration": 3520,
+        "offset": 290160,
+        "lang": "hi"
+    },
+    {
+        "text": "uske baad hi woh aapki image ko generate karta",
+        "duration": 3520,
+        "offset": 292000,
+        "lang": "hi"
+    },
+    {
+        "text": "hai. Toh, that's the main thing. Okay? So, you",
+        "duration": 4079,
+        "offset": 293680,
+        "lang": "hi"
+    },
+    {
+        "text": "can see that abhi hum ek aur ah image generate kar",
+        "duration": 4000,
+        "offset": 295520,
+        "lang": "hi"
+    },
+    {
+        "text": "rahe hain. It's kind of a meme. Toh woh isko",
+        "duration": 4321,
+        "offset": 297759,
+        "lang": "hi"
+    },
+    {
+        "text": "generate karte hain. Ah personally agar aap meri",
+        "duration": 4320,
+        "offset": 299520,
+        "lang": "hi"
+    },
+    {
+        "text": "baat karo mere use case ke liye this is the",
+        "duration": 3679,
+        "offset": 302080,
+        "lang": "hi"
+    },
+    {
+        "text": "best thing that I have got ki main yahan pe",
+        "duration": 3760,
+        "offset": 303840,
+        "lang": "hi"
+    },
+    {
+        "text": "na aise illustrations bana sakta hoon. Aise",
+        "duration": 4000,
+        "offset": 305759,
+        "lang": "hi"
+    },
+    {
+        "text": "images bana sakta hoon. And main unko videos",
+        "duration": 3680,
+        "offset": 307600,
+        "lang": "hi"
+    },
+    {
+        "text": "mein bhi convert kar sakta hoon which I will",
+        "duration": 3761,
+        "offset": 309759,
+        "lang": "hi"
+    },
+    {
+        "text": "show you in a while. Okay? You can see ah this",
+        "duration": 4639,
+        "offset": 311280,
+        "lang": "hi"
+    },
+    {
+        "text": "is the meme. It's a very real kind of a",
+        "duration": 4560,
+        "offset": 313520,
+        "lang": "hi"
+    },
+    {
+        "text": "meme jo aap yahan pe generate kar sakte ho. And",
+        "duration": 3681,
+        "offset": 315919,
+        "lang": "hi"
+    },
+    {
+        "text": "agar hum yahan pe chahte hain, you can even",
+        "duration": 3119,
+        "offset": 318080,
+        "lang": "hi"
+    },
+    {
+        "text": "click on this particular thing and you can",
+        "duration": 3360,
+        "offset": 319600,
+        "lang": "hi"
+    },
+    {
+        "text": "just convert it into a video. So you can",
+        "duration": 3921,
+        "offset": 321199,
+        "lang": "hi"
+    },
+    {
+        "text": "see make a video out of it. You can use",
+        "duration": 3840,
+        "offset": 322960,
+        "lang": "hi"
+    },
+    {
+        "text": "multiple models. So let's say agar maine ek",
+        "duration": 3600,
+        "offset": 325120,
+        "lang": "hi"
+    },
+    {
+        "text": "model select kiya. Aap isko describe kar",
+        "duration": 5600,
+        "offset": 326800,
+        "lang": "hi"
+    },
+    {
+        "text": "sakte ho that basically a make this Nginx",
+        "duration": 6800,
+        "offset": 328720,
+        "lang": "hi"
+    },
+    {
+        "text": "visualization real okay let's say just just",
+        "duration": 5440,
+        "offset": 332400,
+        "lang": "hi"
+    },
+    {
+        "text": "for an example purpose toh even that is",
+        "duration": 4880,
+        "offset": 335520,
+        "lang": "hi"
+    },
+    {
+        "text": "possible toh Univen basically kya hai Univen",
+        "duration": 4720,
+        "offset": 337840,
+        "lang": "hi"
+    },
+    {
+        "text": "ek model hai ek reasoning model hai which is",
+        "duration": 4480,
+        "offset": 340400,
+        "lang": "hi"
+    },
+    {
+        "text": "for generating images and is model ko use",
+        "duration": 3600,
+        "offset": 342560,
+        "lang": "hi"
+    },
+    {
+        "text": "karne ke liye this is the platform that it",
+        "duration": 4000,
+        "offset": 344880,
+        "lang": "hi"
+    },
+    {
+        "text": "is LMA Labs okay and uske baad not only",
+        "duration": 5039,
+        "offset": 346160,
+        "lang": "hi"
+    },
+    {
+        "text": "just this particular thing you can even generate",
+        "duration": 4240,
+        "offset": 348880,
+        "lang": "hi"
+    },
+    {
+        "text": "some marketing photographs jaise agar aapko",
+        "duration": 4401,
+        "offset": 351199,
+        "lang": "hi"
+    },
+    {
+        "text": "agar aap koi product sell karte hain okay so",
+        "duration": 4400,
+        "offset": 353120,
+        "lang": "hi"
+    },
+    {
+        "text": "what you can do is you can even do something",
+        "duration": 3039,
+        "offset": 355600,
+        "lang": "hi"
+    },
+    {
+        "text": "like this. Maan lete hain mere ko ek",
+        "duration": 2959,
+        "offset": 357520,
+        "lang": "hi"
+    },
+    {
+        "text": "sneakers ka ek ad banana hai. So, you can",
+        "duration": 3361,
+        "offset": 358639,
+        "lang": "hi"
+    },
+    {
+        "text": "even do this kind of a stuff. So, so you",
+        "duration": 3361,
+        "offset": 360479,
+        "lang": "hi"
+    },
+    {
+        "text": "can see I have given the prompt. Toh, yeh kya",
+        "duration": 3520,
+        "offset": 362000,
+        "lang": "hi"
+    },
+    {
+        "text": "karega? Yeh mere liye sneakers ka ek ad",
+        "duration": 4799,
+        "offset": 363840,
+        "lang": "hi"
+    },
+    {
+        "text": "banayega which is actually a very common use",
+        "duration": 4720,
+        "offset": 365520,
+        "lang": "hi"
+    },
+    {
+        "text": "case jo ki bahut common use case hone wala",
+        "duration": 3761,
+        "offset": 368639,
+        "lang": "hi"
+    },
+    {
+        "text": "hai. All to all the people jo koi na koi",
+        "duration": 4320,
+        "offset": 370240,
+        "lang": "hi"
+    },
+    {
+        "text": "product sell karte hain. Okay? Toh, you can",
+        "duration": 4000,
+        "offset": 372400,
+        "lang": "hi"
+    },
+    {
+        "text": "see. Theek hai? Thoda wait karte hain. Toh, abhi",
+        "duration": 5120,
+        "offset": 374560,
+        "lang": "hi"
+    },
+    {
+        "text": "maine do task toh parallel laga rakha hai. This",
+        "duration": 5280,
+        "offset": 376400,
+        "lang": "hi"
+    },
+    {
+        "text": "is something going on here. That is okay. Hum",
+        "duration": 4160,
+        "offset": 379680,
+        "lang": "hi"
+    },
+    {
+        "text": "iska bhi wait karte hain. Okay? And this image",
+        "duration": 5200,
+        "offset": 381680,
+        "lang": "hi"
+    },
+    {
+        "text": "is also getting generated. Great.",
+        "duration": 5440,
+        "offset": 383840,
+        "lang": "hi"
+    },
+    {
+        "text": "So, here is my video wala pipeline.",
+        "duration": 4080,
+        "offset": 386880,
+        "lang": "hi"
+    },
+    {
+        "text": "Theek hai? Toh, isko hum idhar le aate hain. And",
+        "duration": 4000,
+        "offset": 389280,
+        "lang": "hi"
+    },
+    {
+        "text": "this is. So, see yeh mera ek sneaker ka ad",
+        "duration": 3840,
+        "offset": 390960,
+        "lang": "hi"
+    },
+    {
+        "text": "generate ho gaya. And you can see the quality",
+        "duration": 3919,
+        "offset": 393280,
+        "lang": "hi"
+    },
+    {
+        "text": "is very high actually of the images. Toh, is",
+        "duration": 4239,
+        "offset": 394800,
+        "lang": "hi"
+    },
+    {
+        "text": "tarah ki images bhi aap yahan par generate kar sakte",
+        "duration": 4081,
+        "offset": 397199,
+        "lang": "hi"
+    },
+    {
+        "text": "ho with this model. Maine is model ko baaki",
+        "duration": 3841,
+        "offset": 399039,
+        "lang": "hi"
+    },
+    {
+        "text": "models ke saath bhi compare karke dekha. And",
+        "duration": 4560,
+        "offset": 401280,
+        "lang": "hi"
+    },
+    {
+        "text": "Univen does a great job to be honest. And",
+        "duration": 4800,
+        "offset": 402880,
+        "lang": "hi"
+    },
+    {
+        "text": "ek kaam karte hain. Thoda sa hum video ko bhi",
+        "duration": 3440,
+        "offset": 405840,
+        "lang": "hi"
+    },
+    {
+        "text": "dekhte hain. That how well the video is being",
+        "duration": 4720,
+        "offset": 407680,
+        "lang": "hi"
+    },
+    {
+        "text": "generated. And here goes our video. Toh,",
+        "duration": 6639,
+        "offset": 409280,
+        "lang": "hi"
+    },
+    {
+        "text": "play karke dekhte hain is video ko. Okay? Ah",
+        "duration": 5494,
+        "offset": 412400,
+        "lang": "hi"
+    },
+    {
+        "text": "Play",
+        "duration": 3680,
+        "offset": 415919,
+        "lang": "hi"
+    },
+    {
+        "text": "[sangeet] ya you can see actually there is a",
+        "duration": 3305,
+        "offset": 417894,
+        "lang": "hi"
+    },
+    {
+        "text": "audio also let me just mute this",
+        "duration": 3521,
+        "offset": 419599,
+        "lang": "hi"
+    },
+    {
+        "text": "particular thing. So you can see that it has",
+        "duration": 4000,
+        "offset": 421199,
+        "lang": "hi"
+    },
+    {
+        "text": "actually animated all these arrows. Okay? Toh",
+        "duration": 3919,
+        "offset": 423120,
+        "lang": "hi"
+    },
+    {
+        "text": "aap is tarah se high quality videos bhi",
+        "duration": 4000,
+        "offset": 425199,
+        "lang": "hi"
+    },
+    {
+        "text": "generate kar sakte ho jo basically educational",
+        "duration": 4000,
+        "offset": 427039,
+        "lang": "hi"
+    },
+    {
+        "text": "videos ke andar as a B roll ya phir as a",
+        "duration": 4081,
+        "offset": 429199,
+        "lang": "hi"
+    },
+    {
+        "text": "mid roll bhi kaam kar sakti hain. Toh crazy",
+        "duration": 4321,
+        "offset": 431039,
+        "lang": "hi"
+    },
+    {
+        "text": "stuff right? And iske jo use cases hain na",
+        "duration": 4960,
+        "offset": 433280,
+        "lang": "hi"
+    },
+    {
+        "text": "woh actually mein matlab endless use cases",
+        "duration": 4559,
+        "offset": 435360,
+        "lang": "hi"
+    },
+    {
+        "text": "hain. For example agar aapko koi apna room",
+        "duration": 3359,
+        "offset": 438240,
+        "lang": "hi"
+    },
+    {
+        "text": "design karwana hai, aapko thoda architecture",
+        "duration": 3521,
+        "offset": 439919,
+        "lang": "hi"
+    },
+    {
+        "text": "point of view mein jaana hai toh you can even",
+        "duration": 3521,
+        "offset": 441599,
+        "lang": "hi"
+    },
+    {
+        "text": "do that thing ki ultra modern glass house",
+        "duration": 4400,
+        "offset": 443440,
+        "lang": "hi"
+    },
+    {
+        "text": "on a cliff looking at the ocean sunset thoda",
+        "duration": 5359,
+        "offset": 445120,
+        "lang": "hi"
+    },
+    {
+        "text": "I mean it's a very dreamy home. But ya is",
+        "duration": 4320,
+        "offset": 447840,
+        "lang": "hi"
+    },
+    {
+        "text": "tarah ki images bhi aap yahan pe generate kar",
+        "duration": 3201,
+        "offset": 450479,
+        "lang": "hi"
+    },
+    {
+        "text": "sakte ho. So this is basically what I",
+        "duration": 3599,
+        "offset": 452160,
+        "lang": "hi"
+    },
+    {
+        "text": "wanted to show that yeh ek model hai which you",
+        "duration": 4320,
+        "offset": 453680,
+        "lang": "hi"
+    },
+    {
+        "text": "can use on the Lumen Labs. Don't worry all the",
+        "duration": 3840,
+        "offset": 455759,
+        "lang": "hi"
+    },
+    {
+        "text": "links will be available in the description",
+        "duration": 3440,
+        "offset": 458000,
+        "lang": "hi"
+    },
+    {
+        "text": "below. Jiske andar aap kya kar sakte ho? So",
+        "duration": 3841,
+        "offset": 459599,
+        "lang": "hi"
+    },
+    {
+        "text": "you can use this particular Univen model",
+        "duration": 4080,
+        "offset": 461440,
+        "lang": "hi"
+    },
+    {
+        "text": "which is basically what what it's a",
+        "duration": 4800,
+        "offset": 463440,
+        "lang": "hi"
+    },
+    {
+        "text": "reasoning model for generating images. Okay?",
+        "duration": 5360,
+        "offset": 465520,
+        "lang": "hi"
+    },
+    {
+        "text": "reason before generating the images. So that was",
+        "duration": 4480,
+        "offset": 468240,
+        "lang": "hi"
+    },
+    {
+        "text": "all about this particular video. Want to",
+        "duration": 3439,
+        "offset": 470880,
+        "lang": "hi"
+    },
+    {
+        "text": "show you this particular product. And I am",
+        "duration": 3360,
+        "offset": 472720,
+        "lang": "hi"
+    },
+    {
+        "text": "pretty sure that agar aap ek developer hain.",
+        "duration": 3761,
+        "offset": 474319,
+        "lang": "hi"
+    },
+    {
+        "text": "aap ek builder hain. You need these kind of",
+        "duration": 4640,
+        "offset": 476080,
+        "lang": "hi"
+    },
+    {
+        "text": "tools to build some images for your blog",
+        "duration": 4399,
+        "offset": 478080,
+        "lang": "hi"
+    },
+    {
+        "text": "post, for images for your Twitter post",
+        "duration": 3599,
+        "offset": 480720,
+        "lang": "hi"
+    },
+    {
+        "text": "ya phir images for your product. Toh, aap",
+        "duration": 4000,
+        "offset": 482479,
+        "lang": "hi"
+    },
+    {
+        "text": "isko use kar sakte hain. Okay? So, that was",
+        "duration": 4241,
+        "offset": 484319,
+        "lang": "hi"
+    },
+    {
+        "text": "all about this particular video. A video",
+        "duration": 3921,
+        "offset": 486479,
+        "lang": "hi"
+    },
+    {
+        "text": "kaisa laga aap mujhe comments mein zaroor batana.",
+        "duration": 3280,
+        "offset": 488560,
+        "lang": "hi"
+    },
+    {
+        "text": "video accha laga toh like and subscribe",
+        "duration": 3040,
+        "offset": 490400,
+        "lang": "hi"
+    },
+    {
+        "text": "zaroor karna. Milte hain hum aapko next",
+        "duration": 4160,
+        "offset": 491840,
+        "lang": "hi"
+    },
+    {
+        "text": "video ke andar.",
+        "duration": 2560,
+        "offset": 493440,
+        "lang": "hi"
+    }
+]
