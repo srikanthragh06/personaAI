@@ -59,7 +59,6 @@ app.post("/api/conversations/:id/chat", async (req, res) => {
         const response = await openai.chat.completions.create({
             model: "gpt-4.1",
             messages: conv.messages,
-            timeout: 30_000,
         });
 
         const reply = response.choices[0].message.content;
