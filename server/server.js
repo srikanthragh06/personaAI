@@ -21,6 +21,9 @@ const conversations = new Map();
 const app = express();
 app.use(express.json());
 
+// Serve built frontend in production
+app.use(express.static(join(cwd(), "..", "web", "dist")));
+
 // Create a new conversation
 app.post("/api/conversations", (_req, res) => {
     const id = randomUUID();
@@ -57,6 +60,7 @@ app.post("/api/conversations/:id/chat", async (req, res) => {
         const response = await openai.chat.completions.create({
             model: "gpt-4.1",
             messages: conv.messages,
+            timeout: 30_000,
         });
 
         const reply = response.choices[0].message.content;
