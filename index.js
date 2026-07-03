@@ -30,7 +30,7 @@ while (true) {
     messages.push({ role: "user", content: userInput });
 
     const response = await openai.chat.completions.create({
-        model: "gpt-4o",
+        model: "gpt-4.1",
         messages,
     });
 
