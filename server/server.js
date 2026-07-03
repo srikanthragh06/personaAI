@@ -22,7 +22,7 @@ const app = express();
 app.use(express.json());
 
 // Create a new conversation
-app.post("/conversations", (_req, res) => {
+app.post("/api/conversations", (_req, res) => {
     const id = randomUUID();
     conversations.set(id, {
         messages: [{ role: "system", content: SYSTEM_PROMPT }],
@@ -32,7 +32,7 @@ app.post("/conversations", (_req, res) => {
 });
 
 // Send a message in a conversation
-app.post("/conversations/:id/chat", async (req, res) => {
+app.post("/api/conversations/:id/chat", async (req, res) => {
     const { id } = req.params;
     const { message } = req.body;
 
