@@ -1,5 +1,6 @@
 import "dotenv/config";
 import express from "express";
+import cors from "cors";
 import OpenAI from "openai";
 import { randomUUID } from "crypto";
 import { readFile } from "fs/promises";
@@ -19,10 +20,8 @@ const TOKEN_LIMIT = 15_000;
 const conversations = new Map();
 
 const app = express();
+app.use(cors());
 app.use(express.json());
-
-// Serve built frontend in production
-app.use(express.static(join(cwd(), "..", "web", "dist")));
 
 // Create a new conversation
 app.post("/api/conversations", (_req, res) => {
