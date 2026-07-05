@@ -38,6 +38,16 @@ function checkDailyReset() {
     }
 }
 
+const CONTEXT_WINDOW = 20;
+
+// Full history is kept in conv.messages; only the system prompt plus the
+// most recent CONTEXT_WINDOW messages get sent to OpenAI, so per-turn cost
+// stays bounded no matter how long the conversation runs.
+function getWindowedMessages(conv) {
+    const [systemMessage, ...rest] = conv.messages;
+    return [systemMessage, ...rest.slice(-CONTEXT_WINDOW)];
+}
+
 /** @type {Map<string, { persona: string, messages: Array<{role: string, content: string}>, tokenCount: number }>} */
 const conversations = new Map();
 
@@ -100,7 +110,7 @@ app.post("/api/conversations/:id/chat", async (req, res, next) => {
         try {
             const response = await openai.chat.completions.create({
                 model: "gpt-4.1",
-                messages: conv.messages,
+                messages: getWindowedMessages(conv),
             });
 
             const reply = response.choices[0].message.content;
