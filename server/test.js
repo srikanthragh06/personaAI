@@ -12,7 +12,12 @@ const PIYUSH_SYSTEM_PROMPT = await readFile(
     "utf-8",
 );
 
-const messages = [{ role: "system", content: PIYUSH_SYSTEM_PROMPT }];
+const HITESH_SYSTEM_PROMPT = await readFile(
+    join(cwd(), "research", "hc", "system-prompt.md"),
+    "utf-8",
+);
+
+const messages = [{ role: "system", content: HITESH_SYSTEM_PROMPT }];
 
 const rl = readline.createInterface({
     input: process.stdin,
