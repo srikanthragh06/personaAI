@@ -17,14 +17,16 @@ process.on("unhandledRejection", (err) => {
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
-const SYSTEM_PROMPT = await readFile(
-    join(cwd(), "prompts", "piyush.md"),
-    "utf-8",
-);
+const PERSONAS = ["piyush", "hitesh"];
+
+const PROMPTS = {
+    piyush: await readFile(join(cwd(), "prompts", "piyush.md"), "utf-8"),
+    hitesh: await readFile(join(cwd(), "prompts", "hitesh.md"), "utf-8"),
+};
 
 const TOKEN_LIMIT = 15_000;
 
-/** @type {Map<string, { messages: Array<{role: string, content: string}>, tokenCount: number }>} */
+/** @type {Map<string, { persona: string, messages: Array<{role: string, content: string}>, tokenCount: number }>} */
 const conversations = new Map();
 
 const app = express();
@@ -32,14 +34,22 @@ app.use(cors());
 app.use(express.json());
 
 // Create a new conversation
-app.post("/api/conversations", (_req, res, next) => {
+app.post("/api/conversations", (req, res, next) => {
     try {
+        const { persona } = req.body ?? {};
+        if (!PERSONAS.includes(persona)) {
+            return res.status(400).json({
+                error: `persona must be one of: ${PERSONAS.join(", ")}`,
+            });
+        }
+
         const id = randomUUID();
         conversations.set(id, {
-            messages: [{ role: "system", content: SYSTEM_PROMPT }],
+            persona,
+            messages: [{ role: "system", content: PROMPTS[persona] }],
             tokenCount: 0,
         });
-        res.json({ id });
+        res.json({ id, persona });
     } catch (err) {
         next(err);
     }
