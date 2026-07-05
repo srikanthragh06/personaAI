@@ -26,6 +26,7 @@ const PROMPTS = {
 
 const TOKEN_LIMIT = 15_000;
 const DAILY_TOKEN_CAP = 1_000_000;
+const MESSAGE_LENGTH_LIMIT = 20_000;
 
 let dailyTokens = 0;
 let dailyResetDate = new Date().toISOString().slice(0, 10);
@@ -96,6 +97,12 @@ app.post("/api/conversations/:id/chat", async (req, res, next) => {
 
         if (!message || typeof message !== "string") {
             return res.status(400).json({ error: "message is required" });
+        }
+
+        if (message.length > MESSAGE_LENGTH_LIMIT) {
+            return res.status(400).json({
+                error: `message too long (max ${MESSAGE_LENGTH_LIMIT} characters)`,
+            });
         }
 
         checkDailyReset();
