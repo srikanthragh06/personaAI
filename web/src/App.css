@@ -139,6 +139,25 @@ body {
   font-size: 15px;
   line-height: 1.4;
   outline: none;
+  scrollbar-width: thin;
+  scrollbar-color: #333 transparent;
+}
+
+.input-bar textarea::-webkit-scrollbar {
+  width: 6px;
+}
+
+.input-bar textarea::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.input-bar textarea::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 3px;
+}
+
+.input-bar textarea::-webkit-scrollbar-thumb:hover {
+  background: #444;
 }
 
 .input-bar textarea:focus {
