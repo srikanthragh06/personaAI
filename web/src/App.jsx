@@ -1,12 +1,14 @@
 import { useState, useEffect, useRef } from "react";
 import "./App.css";
+import piyushAvatar from "./assets/personas/piyush.jpg";
+import hiteshAvatar from "./assets/personas/hitesh.jpg";
 
 const API = import.meta.env.VITE_API_URL || "/api";
 const MESSAGE_LENGTH_LIMIT = 20_000;
 
 const PERSONAS = [
-  { id: "piyush", label: "Piyush" },
-  { id: "hitesh", label: "Hitesh" },
+  { id: "piyush", label: "Piyush Garg", avatar: piyushAvatar, tagline: "Full-stack dev & educator" },
+  { id: "hitesh", label: "Hitesh Choudhary", avatar: hiteshAvatar, tagline: "Founder, Chai aur Code" },
 ];
 
 async function createConversation(persona) {
@@ -111,10 +113,15 @@ function App() {
   const messages = conversations[activePersona]?.messages ?? [];
   const sending = sendingMap[activePersona] ?? false;
   const error = loadError ?? errorMap[activePersona];
+  const currentPersona = PERSONAS.find((p) => p.id === activePersona);
 
   return (
     <div className="chat">
       <header className="header">
+        <div className="brand">
+          <span className="brand-title">Learn Tech</span>
+          <span className="brand-sub">from Piyush Garg &amp; Hitesh Choudhary</span>
+        </div>
         <div className="persona-switch" role="tablist" aria-label="Choose persona">
           {PERSONAS.map((p) => (
             <button
@@ -125,7 +132,8 @@ function App() {
               onClick={() => switchPersona(p.id)}
               disabled={loading}
             >
-              {p.label}
+              <img src={p.avatar} alt="" className="avatar" />
+              <span>{p.label}</span>
             </button>
           ))}
         </div>
@@ -134,6 +142,13 @@ function App() {
       <div className="messages">
         {loading ? (
           <div className="loading">Starting conversations...</div>
+        ) : messages.length === 0 ? (
+          <div className="empty-state">
+            <img src={currentPersona.avatar} alt="" className="empty-avatar" />
+            <h2>{currentPersona.label}</h2>
+            <p>{currentPersona.tagline}</p>
+            <p className="empty-hint">Say hi to start the conversation.</p>
+          </div>
         ) : (
           <>
             {messages.map((m, i) => (
