@@ -10,7 +10,7 @@ import { cwd } from "process";
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
 const SYSTEM_PROMPT = await readFile(
-    join(cwd(), "research", "pg", "system-prompt-3.md"),
+    join(cwd(), "prompts", "piyush.md"),
     "utf-8",
 );
 
