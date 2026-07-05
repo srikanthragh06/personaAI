@@ -24,7 +24,6 @@ const PROMPTS = {
     hitesh: await readFile(join(cwd(), "prompts", "hitesh.md"), "utf-8"),
 };
 
-const TOKEN_LIMIT = 15_000;
 const DAILY_TOKEN_CAP = 1_000_000;
 const MESSAGE_LENGTH_LIMIT = 20_000;
 
@@ -87,12 +86,6 @@ app.post("/api/conversations/:id/chat", async (req, res, next) => {
         const conv = conversations.get(id);
         if (!conv) {
             return res.status(404).json({ error: "Conversation not found" });
-        }
-
-        if (conv.tokenCount >= TOKEN_LIMIT) {
-            return res.status(400).json({
-                error: `Token limit reached (${conv.tokenCount}/${TOKEN_LIMIT})`,
-            });
         }
 
         if (!message || typeof message !== "string") {
