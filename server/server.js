@@ -25,6 +25,18 @@ const PROMPTS = {
 };
 
 const TOKEN_LIMIT = 15_000;
+const DAILY_TOKEN_CAP = 1_000_000;
+
+let dailyTokens = 0;
+let dailyResetDate = new Date().toISOString().slice(0, 10);
+
+function checkDailyReset() {
+    const today = new Date().toISOString().slice(0, 10);
+    if (today !== dailyResetDate) {
+        dailyResetDate = today;
+        dailyTokens = 0;
+    }
+}
 
 /** @type {Map<string, { persona: string, messages: Array<{role: string, content: string}>, tokenCount: number }>} */
 const conversations = new Map();
@@ -76,6 +88,13 @@ app.post("/api/conversations/:id/chat", async (req, res, next) => {
             return res.status(400).json({ error: "message is required" });
         }
 
+        checkDailyReset();
+        if (dailyTokens >= DAILY_TOKEN_CAP) {
+            return res.status(429).json({
+                error: "Daily usage cap reached, try again tomorrow",
+            });
+        }
+
         conv.messages.push({ role: "user", content: message });
 
         try {
@@ -89,6 +108,7 @@ app.post("/api/conversations/:id/chat", async (req, res, next) => {
 
             conv.messages.push({ role: "assistant", content: reply });
             conv.tokenCount += total_tokens;
+            dailyTokens += total_tokens;
 
             res.json({
                 reply,
