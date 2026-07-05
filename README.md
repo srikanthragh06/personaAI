@@ -4,7 +4,7 @@ Chat with AI versions of Piyush Garg and Hitesh Choudhary — built from their a
 
 ## Live Demo
 
-<!-- TODO -->
+https://persona-ai-black-nine.vercel.app/
 
 ## Features
 
