@@ -3,3 +3,7 @@ node_modules
 temp.md
 ROADMAP.md
 **/transcripts
+server/hc/youtube
+server/hc/youtube-transliterated
+server/pg/youtube
+server/pg/youtube-transliterated
