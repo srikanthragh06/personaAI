@@ -21,45 +21,35 @@ async function createConversation(persona) {
 }
 
 function App() {
-  const [persona, setPersona] = useState(PERSONAS[0].id);
-  const [convId, setConvId] = useState(null);
-  const [messages, setMessages] = useState([]);
+  const [activePersona, setActivePersona] = useState(PERSONAS[0].id);
+  const [conversations, setConversations] = useState({});
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(true);
-  const [sending, setSending] = useState(false);
-  const [error, setError] = useState(null);
+  const [loadError, setLoadError] = useState(null);
+  const [sendingMap, setSendingMap] = useState({});
+  const [errorMap, setErrorMap] = useState({});
   const bottomRef = useRef(null);
   const textareaRef = useRef(null);
 
   useEffect(() => {
-    createConversation(persona)
-      .then((id) => {
-        setConvId(id);
+    Promise.all(
+      PERSONAS.map((p) =>
+        createConversation(p.id).then((id) => [p.id, { id, messages: [] }]),
+      ),
+    )
+      .then((entries) => {
+        setConversations(Object.fromEntries(entries));
         setLoading(false);
       })
-      .catch(() => setError("Failed to start conversation"));
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+      .catch(() => setLoadError("Failed to start conversations"));
   }, []);
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages]);
+  }, [conversations, activePersona]);
 
-  const switchPersona = async (next) => {
-    if (next === persona || loading || sending) return;
-    setLoading(true);
-    setError(null);
-    setMessages([]);
-    setInput("");
-    try {
-      const id = await createConversation(next);
-      setConvId(id);
-      setPersona(next);
-    } catch {
-      setError("Failed to switch persona");
-    } finally {
-      setLoading(false);
-    }
+  const switchPersona = (next) => {
+    setActivePersona(next);
   };
 
   const autosize = (el) => {
@@ -70,14 +60,23 @@ function App() {
 
   const send = async (e) => {
     e.preventDefault();
+    const persona = activePersona;
     const text = input.trim();
-    if (!text || sending || text.length > MESSAGE_LENGTH_LIMIT) return;
+    if (!text || sendingMap[persona] || text.length > MESSAGE_LENGTH_LIMIT) return;
+
+    const convId = conversations[persona].id;
 
     setInput("");
     autosize(textareaRef.current);
-    setMessages((m) => [...m, { role: "user", content: text }]);
-    setSending(true);
-    setError(null);
+    setConversations((c) => ({
+      ...c,
+      [persona]: {
+        ...c[persona],
+        messages: [...c[persona].messages, { role: "user", content: text }],
+      },
+    }));
+    setSendingMap((s) => ({ ...s, [persona]: true }));
+    setErrorMap((e) => ({ ...e, [persona]: null }));
 
     try {
       const r = await fetch(`${API}/conversations/${convId}/chat`, {
@@ -87,11 +86,17 @@ function App() {
       });
       const data = await r.json();
       if (!r.ok) throw new Error(data.error);
-      setMessages((m) => [...m, { role: "assistant", content: data.reply }]);
+      setConversations((c) => ({
+        ...c,
+        [persona]: {
+          ...c[persona],
+          messages: [...c[persona].messages, { role: "assistant", content: data.reply }],
+        },
+      }));
     } catch (err) {
-      setError(err.message);
+      setErrorMap((e) => ({ ...e, [persona]: err.message }));
     } finally {
-      setSending(false);
+      setSendingMap((s) => ({ ...s, [persona]: false }));
     }
   };
 
@@ -103,6 +108,9 @@ function App() {
   };
 
   const overLimit = input.length > MESSAGE_LENGTH_LIMIT;
+  const messages = conversations[activePersona]?.messages ?? [];
+  const sending = sendingMap[activePersona] ?? false;
+  const error = loadError ?? errorMap[activePersona];
 
   return (
     <div className="chat">
@@ -112,10 +120,10 @@ function App() {
             <button
               key={p.id}
               role="tab"
-              aria-selected={persona === p.id}
-              className={persona === p.id ? "active" : ""}
+              aria-selected={activePersona === p.id}
+              className={activePersona === p.id ? "active" : ""}
               onClick={() => switchPersona(p.id)}
-              disabled={loading || sending}
+              disabled={loading}
             >
               {p.label}
             </button>
@@ -125,7 +133,7 @@ function App() {
 
       <div className="messages">
         {loading ? (
-          <div className="loading">Starting conversation...</div>
+          <div className="loading">Starting conversations...</div>
         ) : (
           <>
             {messages.map((m, i) => (
