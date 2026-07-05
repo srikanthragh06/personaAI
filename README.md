@@ -70,13 +70,3 @@ System prompts went through several iterations, moving from a plain instructions
 ## Sample Conversations
 
 <!-- TODO -->
-
-## API Reference
-
-**`POST /api/conversations`**
-Body: `{ "persona": "piyush" | "hitesh" }`
-Response: `{ "id": string, "persona": string }`
-
-**`POST /api/conversations/:id/chat`**
-Body: `{ "message": string }` (max 20,000 characters)
-Response: `{ "reply": string, "tokens": { "turn": number, "session": number } }`
