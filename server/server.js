@@ -7,6 +7,14 @@ import { readFile } from "fs/promises";
 import { join } from "path";
 import { cwd } from "process";
 
+process.on("uncaughtException", (err) => {
+    console.error("Uncaught exception:", err);
+});
+
+process.on("unhandledRejection", (err) => {
+    console.error("Unhandled rejection:", err);
+});
+
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
 const SYSTEM_PROMPT = await readFile(
@@ -24,59 +32,75 @@ app.use(cors());
 app.use(express.json());
 
 // Create a new conversation
-app.post("/api/conversations", (_req, res) => {
-    const id = randomUUID();
-    conversations.set(id, {
-        messages: [{ role: "system", content: SYSTEM_PROMPT }],
-        tokenCount: 0,
-    });
-    res.json({ id });
+app.post("/api/conversations", (_req, res, next) => {
+    try {
+        const id = randomUUID();
+        conversations.set(id, {
+            messages: [{ role: "system", content: SYSTEM_PROMPT }],
+            tokenCount: 0,
+        });
+        res.json({ id });
+    } catch (err) {
+        next(err);
+    }
 });
 
 // Send a message in a conversation
-app.post("/api/conversations/:id/chat", async (req, res) => {
-    const { id } = req.params;
-    const { message } = req.body;
-
-    const conv = conversations.get(id);
-    if (!conv) {
-        return res.status(404).json({ error: "Conversation not found" });
-    }
-
-    if (conv.tokenCount >= TOKEN_LIMIT) {
-        return res.status(400).json({
-            error: `Token limit reached (${conv.tokenCount}/${TOKEN_LIMIT})`,
-        });
-    }
-
-    if (!message || typeof message !== "string") {
-        return res.status(400).json({ error: "message is required" });
-    }
-
-    conv.messages.push({ role: "user", content: message });
-
+app.post("/api/conversations/:id/chat", async (req, res, next) => {
     try {
-        const response = await openai.chat.completions.create({
-            model: "gpt-4.1",
-            messages: conv.messages,
-        });
+        const { id } = req.params;
+        const { message } = req.body;
 
-        const reply = response.choices[0].message.content;
-        const { total_tokens } = response.usage;
+        const conv = conversations.get(id);
+        if (!conv) {
+            return res.status(404).json({ error: "Conversation not found" });
+        }
 
-        conv.messages.push({ role: "assistant", content: reply });
-        conv.tokenCount += total_tokens;
+        if (conv.tokenCount >= TOKEN_LIMIT) {
+            return res.status(400).json({
+                error: `Token limit reached (${conv.tokenCount}/${TOKEN_LIMIT})`,
+            });
+        }
 
-        res.json({
-            reply,
-            tokens: { turn: total_tokens, session: conv.tokenCount },
-        });
+        if (!message || typeof message !== "string") {
+            return res.status(400).json({ error: "message is required" });
+        }
+
+        conv.messages.push({ role: "user", content: message });
+
+        try {
+            const response = await openai.chat.completions.create({
+                model: "gpt-4.1",
+                messages: conv.messages,
+            });
+
+            const reply = response.choices[0].message.content;
+            const { total_tokens } = response.usage;
+
+            conv.messages.push({ role: "assistant", content: reply });
+            conv.tokenCount += total_tokens;
+
+            res.json({
+                reply,
+                tokens: { turn: total_tokens, session: conv.tokenCount },
+            });
+        } catch (err) {
+            // Remove the user message we just pushed — it wasn't answered
+            conv.messages.pop();
+            console.error("OpenAI error:", err.message);
+            res.status(500).json({ error: "Something went wrong" });
+        }
     } catch (err) {
-        // Remove the user message we just pushed — it wasn't answered
-        conv.messages.pop();
-        console.error("OpenAI error:", err.message);
-        res.status(500).json({ error: "Something went wrong" });
+        next(err);
     }
+});
+
+// Catch-all error handler — anything that reaches here (thrown errors,
+// malformed JSON bodies from express.json(), etc.) gets a clean JSON
+// response instead of taking the process down or leaking a stack trace.
+app.use((err, _req, res, _next) => {
+    console.error("Unhandled error:", err);
+    res.status(err.status || 500).json({ error: "Something went wrong" });
 });
 
 const PORT = process.env.PORT || 3000;
