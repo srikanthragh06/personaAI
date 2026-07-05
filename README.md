@@ -69,4 +69,8 @@ System prompts went through several iterations, moving from a plain instructions
 
 ## Sample Conversations
 
-<!-- TODO -->
+<img width="958" height="951" alt="Screenshot from 2026-07-05 23-47-20" src="https://github.com/user-attachments/assets/11d747ef-cf32-4f25-b68a-b7827b96add2" />
+<img width="958" height="951" alt="Screenshot from 2026-07-05 23-47-27" src="https://github.com/user-attachments/assets/dbe06a3d-a6c0-4860-8e94-77c60ca88d86" />
+
+<img width="958" height="951" alt="Screenshot from 2026-07-05 23-56-06" src="https://github.com/user-attachments/assets/ca0f032a-8745-4f74-8277-e28087381c09" />
+<img width="958" height="951" alt="Screenshot from 2026-07-05 23-56-10" src="https://github.com/user-attachments/assets/f8647487-aa7f-4ecf-928b-fca0a7aa7452" />
